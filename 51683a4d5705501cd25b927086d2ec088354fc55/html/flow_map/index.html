@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<script src="https://d3js.org/d3.v4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+	<script src="https://d3js.org/d3-geo-projection.v1.min.js"></script>	
+<style>
+	.commodityButton, .commodityLabel { cursor:pointer; }
+	.route { fill: none; stroke: #333; stroke-width: 2px; }
+	.land { fill:#a8ddb5; }
+	svg { background: #43a2ca; }
+	.port { fill: #8c6bb1; stroke:#084081; stroke-width: 2px; }	
+	.source-port { fill: #fdae6b; stroke:#d94801; stroke-width: 2px; }
+</style>
+
+	
+</head>
+<body>
+	<div id="map"> </div>
+	
+	<script>
+	var width = 950; var height = 650;
+	var commodities = ["lumber","coal","stone"];
+	
+	var projection = d3.geoKavrayskiy7()
+		.scale(302)
+		.rotate([-205,-10])
+		.translate([width/2,height/2])
+		.precision(0.1);
+
+	var path = d3.geoPath().projection(projection);
+
+	var svg = d3.select("#map").append("svg")
+		.attr("width", width)
+		.attr("height", height);
+	
+	// Create a few groups to layer elements correctly
+	var g1 = svg.append("g"); var g2 = svg.append("g"); 
+		
+	d3.json("world.json",function(error,world) {
+		g1.insert("path")
+			.datum(topojson.feature(world, world.objects.land))
+			.attr("class", "land")
+			.attr("d", path);
+			
+		// Place and label Victoria
+		g2.append("circle")
+			.attr("cx", function() { return projection(ports["Victoria"].loc)[0];})
+			.attr("cy", function() { return projection(ports["Victoria"].loc)[1];})
+			.attr("r",6)
+			.attr("class","source-port source");
+		
+		g2.append("text")
+			.attr("x", function() { return projection(ports["Victoria"].loc)[0] + 5;})
+			.attr("y", function() { return projection(ports["Victoria"].loc)[1] + 0;})
+			.text("Victoria");
+
+		// Add some buttons
+		var buttons = g2.selectAll(".commodityButton")
+			.data(commodities)
+			.enter()
+			.append("rect")
+			.attr("x", function(d,i) { return i * 90 + 20} )
+			.attr("y", 20)
+			.attr("rx",20).attr("ry",20).attr("width",80).attr("height",80)
+			.attr("fill","#aaa").attr("stroke","#999")
+			.attr("class","commodityButton")
+			.on("click",function(d) { replaceCommodity(d); });
+				
+		var text = g2.selectAll(".commodityLabel")
+			.data(commodities).enter()
+			.append("text")
+			.attr("x",function (d,i) { return i * 90 + 60} )
+			.attr("y",65)
+			.attr("text-anchor","middle")
+			.text(function(d) { return d; })
+			.attr("class","commodityLabel")
+			.on("click",function(d) { replaceCommodity(d); });
+						
+		// Start with a set of routes
+		drawCommodity("coal");	
+	});
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	// Draw a set of routes 
+	function drawCommodity(commodity) {
+		d3.csv(commodity + ".csv", function (error, routes) {
+			var maxVolume = d3.max(routes, function(d) { return d.vol; });
+						
+			var line = d3.line().curve(d3.curveBasis);
+	
+			routes.forEach( function(d,i) {
+			 	var routePath = g1.append("path")	
+					.attr("d", line ([ projection(ports[d.dept].loc),projection(intermediatePoints[d.via]),projection(ports[d.arr].loc)]) )
+					.attr("class", d.arr.replace(" ", "-") + " " + "route")
+					.attr("stroke-opacity", Math.sqrt(d.vol / maxVolume) )
+					.attr("stroke-width", 1 );
+
+			var totalLength =  routePath.node().getTotalLength() + 10;
+				routePath
+					.attr("stroke-dasharray", totalLength + " " + totalLength)
+					.attr("stroke-dashoffset", totalLength)
+					.transition()
+					.duration(2000)
+					.on("start", drawPorts(d) )
+					.attr("stroke-dashoffset", 0);
+			});
+		});
+	}		
+	//////////////////////////////////////////////////////////////////////////////////////////////////		
+	// Replace a commodity			
+	function replaceCommodity(commodity) {
+		d3.selectAll(".port").remove();
+		d3.selectAll(".port-label").remove();
+		
+		var routes = g1.selectAll(".route")
+			.transition()
+			.duration(1000)
+			.attr("stroke-dashoffset",  function() { return -this.getTotalLength(); })
+			.transition().duration(0).remove();
+		
+		drawCommodity(commodity);	
+	}	
+	///////////////////////////////////////////////////////////////////////////////////////////////////		
+	// Draw ports and labels associated with routes
+	function drawPorts(d) {
+		var point = g2.append("circle")
+			.attr("cx", projection(ports[d.arr].loc)[0])
+			.attr("cy", projection(ports[d.arr].loc)[1])
+			.attr("r",4.5)
+			.attr("class","port")
+			.attr("opacity",0.1)
+			.transition().duration(2000)
+			.attr("id",d.arr.replace(" ", "-")) 
+			.attr("opacity",1);
+			
+		var text = g2.append("text")
+			.attr("x", projection(ports[d.arr].loc)[0] + ports[d.arr]["off"][0])
+			.attr("y", projection(ports[d.arr].loc)[1] - ports[d.arr]["off"][1])
+			.text(d.arr)
+			.attr("opacity",0.1)
+			.attr("class","port-label")
+			.transition().duration(2000)
+			.attr("opacity",1)
+			.attr("id",d.arr.replace(" ", "-") + "-label");
+	}			
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////		
+	// Place references and text offsets
+	var ports = {
+		Honolulu:{loc:[-157.816667,21.3],off:[-67,0],},
+		Victoria:{loc:[-123.365556,48.428611],off:[5,5],},
+		"San Francisco":{loc:[-122.416667,37.783333],off:[5,8],},
+		Dunedin:{loc:[170.502954,-45.878666],off:[10,5],},
+		Sydney:{loc:[151.209444,-33.859972],off:[-45,10],},
+		Yokohama:{loc:[139.653905,35.455161],off:[5,15],},
+		"Hong Kong":{loc:[114.204277,22.330869],off:[-50,11],},
+		Callao:{loc:[-77.131981,-11.876547],off:[10,5],},
+		Batavia:{loc:[106.850648,-6.209157],off:[-20,10],},
+		Shanghai:{loc:[121.475449,31.230331],off:[-60,7],},
+		Melbourne:{loc:[144.96668,-37.812339],off:[-75,-3],},
+		Valparaiso:{loc:[-71.616667,-33.05],off:[6,-5],},
+		Lambayaque:{loc:[-79.902088,-6.699651],off:[10,5],},
+		Arica:{loc:[-70.333333,-18.483333],off:[8,-2],},
+		Iquique:{loc:[-70.15,-20.216667],off:[8,-4],},
+		Coquimbo:{loc:[-71.345873,-29.949609],off:[2,7],},
+		Tahiti:{loc:[-149.561182,-17.538858],off:[10,5],},
+		Guaymas:{loc:[-110.900017,27.920381],off:[10,5],},
+		Sitka:{loc:[-135.330889,57.052526],off:[10,5],},
+		Ounalaska:{loc:[-166.529263,53.884106],off:[-67,5],},
+		Portland:{loc:[-122.675930,45.532801],off:[10,0],},
+		"San Diego":{loc:[-117.164123,32.718556],off:[10,2],},
+		"San Pedro":{loc:[-118.29,33.74],off:[10,8],},
+		Mazatlan:{loc:[-106.412742,23.250984],off:[10,5],},
+		Arica:{loc:[-70.333333,-18.483333],off:[8,6],},
+		"Port Chalmers":{loc:[170.621466,-45.815739],off:[5,10],}
+	};
+	// These are just to give the routes a stylistic curve, they were chosen by hand	
+	// I was unable to find a satisfactory algorithm for spacing them automatically for this
+	var intermediatePoints = {
+		VictoriaOffshore:[-141.358218,41.384491],   // For others
+		VictoriaOffshoreUS:[-131.967321,39.045791], // Alternate for US destinations
+		VictoriaOffshoreSA:[-159.469220, 0.368191], // For South America
+		VictoriaOffshoreMX:[-146.558129,21],		// For Mexico
+		VictoriaOffshoreAU:[-175.839426,-28],		// For Australia
+		VictoriaOffshoreAS:[-163.976757,25],        // For Asia
+		VictoriaOffshoreAK:[-141.374371,51.328740], // For Alaska
+		VictoriaOffshoreOS:[-127.683328,43.675809], // For Oregon
+		VictoriaOffshoreSF:[-135.683328,35.675809], // For San Francisco
+		VictoriaOffshoreSC:[-138.683328,30.675809]  // for southern California
+	};
+	
+	</script>
+
+</body>
+</html>
