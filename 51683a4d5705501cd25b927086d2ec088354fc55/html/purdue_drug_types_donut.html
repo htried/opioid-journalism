@@ -128,12 +128,12 @@ var pie = d3.layout.pie()
     });
 
 var arc = d3.svg.arc()
-    .innerRadius(radius * 0.4)
-    .outerRadius(radius * 0.7);
+    .innerRadius(radius * 0.5)
+    .outerRadius(radius * 0.8);
 
 var outerArc = d3.svg.arc()
-    .innerRadius(radius * 0.8)
-    .outerRadius(radius * 0.8);
+    .innerRadius(radius * 0.9)
+    .outerRadius(radius * 0.9);
 
 svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
