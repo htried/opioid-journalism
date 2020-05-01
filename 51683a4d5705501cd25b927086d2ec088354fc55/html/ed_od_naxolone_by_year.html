@@ -66,9 +66,6 @@ dataset.then(function(data) {
         }
         return filtered;
     }
-
-    console.log(data)
-
     const groups = d3.map(data, function(d) { return (d.Year); }).keys();
     // Initialize year to default 2016-2019
     var filtered_slice = deepCopy(groups[0]);
@@ -134,10 +131,18 @@ svg.append("g")
     .call(yaxis)
     .append("text")
     .attr("transform", "rotate(-90)")
-    .attr("dy", ".75em")
-    .attr("y", 6)
-    .style("text-anchor", "end")
+    .attr("dy", "1em")
+    .attr("x", 0 - (height / 2))
+    .attr("y", 0 - margin)
+    .style("text-anchor", "middle")
     .text("Frequency");
+
+svg.append("text")
+    .attr("x", (width / 2))             
+    .attr("y", 0 - margin * 2)
+    .attr("text-anchor", "middle")  
+    .style("font-size", "20px") 
+    .text("OD, ED, Naloxone Use and Distribution by Town");
     
 //----------------------------LINES-----------------------------//
 var lines = svg.selectAll(".lines")
@@ -147,7 +152,10 @@ var lines = svg.selectAll(".lines")
     
     lines.append("path")
     .attr("class", "line")
-    .attr("d", function(d) { return line(d.values); });
+    .attr("d", function(d) { return line(d.values); })
+    .style("stroke", function(){
+                return '#'+Math.floor(Math.random()*16777215).toString(16);
+        });
     
     lines.append("text")
     .attr("class","serie_label")
@@ -163,7 +171,7 @@ var lines = svg.selectAll(".lines")
 
 //---------------------------POINTS-----------------------------//  
     // lines.selectAll("points")
-    // .data(function(d) {return d.values})
+    // .data(function(d) { return d.values})
     // .enter()
     // .append("circle")
     // .attr("cx", function(d) { return xScale(d.municipality); })       
@@ -177,7 +185,7 @@ var lines = svg.selectAll(".lines")
     // .data(function(d) { return(d.values); } )
     // .enter()
     // .append("circle")
-    // .attr("cx", function(d) { return xScale(d.municipality); })       
+    // .attr("cx", function(d) {return xScale(d.municipality); })       
     // .attr("cy", function(d) { return yScale(d.measurement); })     
     // .attr('r', 10)
     // .style("opacity", 0)
@@ -213,9 +221,8 @@ var lines = svg.selectAll(".lines")
 
     // A function that updates the chart
     function update(selectedGroup) {
-        // Create new data with the selection?
+        // Create new data with the selection
         filtered_slice = deepCopy(selectedGroup);
-        // data_copy = [...data].filter(function(d) { return d.Year == selectedGroup; });
 
         yScale.domain([(0), d3.max(filtered_slice, function(c) {
             return d3.max(c.values, function(d) { 
@@ -223,12 +230,12 @@ var lines = svg.selectAll(".lines")
             })
         ]);
     
-// // //-----------------------------AXES-----------------------------//
+// // //-----------------------------UPDATE-----------------------------//
 
         svg.selectAll(".yaxis").transition().duration(1500).call(yaxis);
 
         // generate line paths
-        var lines = svg.selectAll(".line").data(filtered_slice).attr("class","line");
+        var lines = svg.selectAll(".line").data(filtered_slice);
 
         // transition from previous paths to new paths
         lines.transition().duration(1500)
@@ -237,33 +244,48 @@ var lines = svg.selectAll(".lines")
                 return '#'+Math.floor(Math.random()*16777215).toString(16);
         });
 
-        // Redraw the points
-        // var points = lines.selectAll(".point")
+        // var points = lines.selectAll(".point").data(function(d) { return d.values;})
+        //     .enter()
+        //     .append("point")
         //     .attr("class", "point");
 
+        // points.exit().remove();
+
         // points.transition().duration(1500)
-        //     .attr("d", function(d) {return d.values;})
-        //     .attr("cx", function(d) { return xScale(d.municipality); })       
+        //     .attr("cx", function(d) { console.log(d); return xScale(d.municipality); })       
         //     .attr("cy", function(d) { return yScale(d.measurement); })  
-        //     .attr("r", 1)
+        //     .attr("r", 2)
+        //     .style("opacity", 1);
+
+        // svg.selectAll(".point").remove();
+        // var points = svg.selectAll(".point").data(filtered_slice);
+
+        // points.select('circle')
+        //     .attr("d", function(d) { console.log(d); return d.values; })
+        //     .attr("cx", function(d) { return xScale(d.municipality); })       
+        //     .attr("cy", function(d) { return yScale(d.measurement); });
+
+        // let pointG = points.enter()
+        //     .append("g")
+        //     .attr('class', 'point')
+
+        // pointG.append("circle")
+        //     .attr("cx", function(d) { console.log(d); return xScale(d.municipality); })       
+        //     .attr("cy", function(d) { return yScale(d.measurement); })  
+        //     .attr("r", 2)
         //     .style("opacity", 1);
 
         // // Reposition labels
-        // var serie_label = svg.selectAll(".serie_label")
-        //     .datum(filtered_slice, function(d) { 
-        //         return {
-        //             id: d.id, 
-        //             value: d.values[d.values.length - 1]}; })
-        //     .attr("class", "serie_label");
+        var serie_label = svg.selectAll(".serie_label")
+            .data(filtered_slice)
+            .attr("class", "serie_label");
 
-        // serie_label.transition().duration(1500)
-        //     // .attr("d", function(d) { 
-        //     //     return {
-        //     //         id: d.id, 
-        //     //         value: d.values[d.values.length - 1]}; })
-        //     .attr("transform", function(d) { 
-        //         return "translate(" + (xScale(d.value.municipality) + 5)  
-        //             + "," + (yScale(d.value.measurement) + 5 ) + ")"; });
+        serie_label.transition().duration(1500)
+            .attr("transform", function(d) { 
+                console.log(d);
+                var mx = d.values[d.values.length - 1];
+                return "translate(" + (xScale(mx.municipality) + 5)  
+                    + "," + (yScale(mx.measurement) + 5 ) + ")"; });
     
         // enter any new data
         // lines.enter()
@@ -275,10 +297,8 @@ var lines = svg.selectAll(".lines")
         //   });
 
         // exit
-        points.exit().remove();
         lines.exit().remove();
     }
-
     // When the button is changed, run the updateChart function
     d3.select("#selectButton").on("change", function(d) {
         // recover the option that has been chosen
@@ -286,6 +306,95 @@ var lines = svg.selectAll(".lines")
         // run the updateChart function with this selected option
         update(selectedOption)
     })
+
+    // // //-----------------------------HOVER-----------------------------//
+
+    var mouseG = svg.append("g")
+      .attr("class", "mouse-over-effects");
+
+    mouseG.append("path") // this is the black vertical line to follow mouse
+      .attr("class", "mouse-line")
+      .style("stroke", "black")
+      .style("stroke-width", "1px")
+      .style("opacity", "0");
+      
+    var lines = document.getElementsByClassName('line');
+
+    var mousePerLine = mouseG.selectAll('.mouse-per-line')
+      .data(filtered_slice)
+      .enter()
+      .append("g")
+      .attr("class", "mouse-per-line");
+
+    mousePerLine.append("circle")
+      .attr("r", 7)
+      // .style("stroke", function(d) {
+      //   return color(d.id);
+      // })
+      .style("fill", "none")
+      .style("stroke-width", "1px")
+      .style("opacity", "0");
+
+    mousePerLine.append("text")
+      .attr("transform", "translate(10,3)");
+
+    mouseG.append('svg:rect') // append a rect to catch mouse movements on canvas
+      .attr('width', width) // can't catch mouse events on a g element
+      .attr('height', height)
+      .attr('fill', 'none')
+      .attr('pointer-events', 'all')
+      .on('mouseout', function() { // on mouse out hide line, circles and text
+        d3.select(".mouse-line")
+          .style("opacity", "0");
+        d3.selectAll(".mouse-per-line circle")
+          .style("opacity", "0");
+        d3.selectAll(".mouse-per-line text")
+          .style("opacity", "0");
+      })
+      .on('mouseover', function() { // on mouse in show line, circles and text
+        d3.select(".mouse-line")
+          .style("opacity", "1");
+        d3.selectAll(".mouse-per-line circle")
+          .style("opacity", "1");
+        d3.selectAll(".mouse-per-line text")
+          .style("opacity", "1");
+      })
+      .on('mousemove', function() { // mouse moving over canvas
+        var mouse = d3.mouse(this);
+        d3.select(".mouse-line")
+          .attr("d", function() {
+            var d = "M" + mouse[0] + "," + height;
+            d += " " + mouse[0] + "," + 0;
+            return d;
+          });
+
+        d3.selectAll(".mouse-per-line")
+          .attr("transform", function(d, i) {
+            var xDate = xScale(mouse[0]),
+                bisect = d3.bisector(function(d) { return d.measurement; }).right;
+                idx = bisect(d.values, xDate);
+            
+            var beginning = 0,
+                end = lines[i].getTotalLength(),
+                target = null;
+
+            while (true){
+              target = Math.floor((beginning + end) / 2);
+              pos = lines[i].getPointAtLength(target);
+              if ((target === end || target === beginning) && pos.x !== mouse[0]) {
+                  break;
+              }
+              if (pos.x > mouse[0])      end = target;
+              else if (pos.x < mouse[0]) beginning = target;
+              else break; //position found
+            }
+                        
+            d3.select(this).select('text')
+              .text(yScale.invert(pos.y).toFixed(2));
+              
+            return "translate(" + mouse[0] + "," + pos.y +")";
+          });
+      });
 
 });
 </script>
