@@ -21,7 +21,7 @@ font-size: 120%;
 }
 
 /* LINE CHART */
-path.line-0 {
+path.line {
 fill: none;
 stroke: #ed3700;
 }
@@ -36,6 +36,12 @@ path.line-2 {
 fill: none;
 stroke: #69a3b2;
 stroke-dasharray: 6;
+}
+
+path.line-3 {
+fill: none;
+stroke: #69a3b2;
+stroke-dasharray: 4;
 }
 
 .serie_label {
