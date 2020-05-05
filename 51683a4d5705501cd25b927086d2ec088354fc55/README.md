@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Welcome the Rhode Island Opioid Data Journalism Project
 
-You can use the [editor on GitHub](https://github.com/htried/opioid-journalism/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Hi there! We're a multidisciplinary group of data scientists and journalists from Brown University, working together to investigate the opioid crisis in Rhode Island through a rich variety of data sources. With the expertise and technical know-how of data scientists, we hope to dig into daunting datasets to create evocative and informative graphics on the opioid crisis. Journalists will then take these findings and contextualize them with human stories. We hope to continue working on these stories through the summer, with the intention of pitching and publishing them in fall 2020.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Datasets
+We've looked at many different data sources to get a deep understanding of the opioid crisis in Rhode Island:
+- ARCOS
+- Census data
+- Publicly available state data on overdose deaths, emergency room visits, and naloxone use and distribution
+- Detailied overdose records for the city of Providence
+- Publicly available doctor payment data
+- Digitized court records since 1980
+- Lawsuits against opioid manufacturers like Rhodes Pharmaceuticals and Purdue Pharma
+- (to come) Medicaid prescription utilization
 
-### Markdown
+### Tools
+We're using several different tools to store, process, and visualize data:
+- Google Drive (for shared data storage)
+- Google Colab (for shared data processing scripts)
+- Pandas (for data manipulation and filtering)
+- d3.js (for mapping and visualizations)
+- Tableau (for mapping and visualizations)
+- Github Pages (for mocking up what articles will eventually look like and putting images/graphics with text)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Article Mockups
+You can find our article mockups at the following links:
+- [Court Data investigation](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/courtdata.html)
+- [Dollars for Docs](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/dollars4docs.html)
+- [Injured Workers' Pharmacy/Mail-Order Pharmacies](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/iwp.html)
+- [ARCOS/Pharmacies](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/pharmacies.html)
+- [Rhodes Pharmaceuticals](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/rhodes.html)
+- [Providence Overdoses](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/ods.html)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/htried/opioid-journalism/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The members of the data science and graphics team are Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee, and Hal Triedman. This project is a part of Brown University's CS for Social Change practicum.
