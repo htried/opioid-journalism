@@ -16,14 +16,7 @@
 	Growth of the Injured Worker's Pharmacy
 </h2>
 <p>
-  <body>
-    <div class="dropdown">
-     <button onclick="myFunction()" class="dropbtn">Pharmacies</button>
-     <div id="myDropdown" class="dropdown-content">
-       <a class="IWP">IWP</a>
-       <a class="Pharmerica">Pharmerica</a>
-     </div>
-   </div>
+<div id="container" class="svg-container"></div>
 <script>
         // set the dimensions and margins of the graph
         var margin = {
@@ -59,7 +52,7 @@
         // append the svg obgect to the body of the page
         // appends a 'group' element to 'svg'
         // moves the 'group' element to the top left margin
-        var svg = d3.select("body").append("svg")
+        var svg = d3.select("div#container").append("svg")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
@@ -129,9 +122,11 @@
     </script>
 </p>
 <p>
-This graph shows the types of opioids that IWP distributes
+Temporary
 </p>
 <p>
+<select id="selectButton"></select>
+<div id="container2" class="svg-container2"></div>
 <script>
 
   function myFunction() {
@@ -151,7 +146,7 @@ This graph shows the types of opioids that IWP distributes
     }
   }
   
-  var svg = d3.select("body")
+  var svg = d3.select("div#container2")
       .append("svg")
       .append("g")
   
@@ -334,6 +329,9 @@ This graph shows the types of opioids that IWP distributes
   };
   
   </script>
+</p>
+<p>
+	The recorded peaks in Providence and the surrounding areas stay relatively stable over the years. Other towns, like Lincoln, West Warick, and Westerly experience a lot of fluctuation.
 </p>
 <ul>
 <link rel="stylesheet" type="text/css" href="../graphs/styles.css">
