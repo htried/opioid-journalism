@@ -6,17 +6,16 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <h1>
-	ARCOS/Pharmacies
+	Injured Worker's Pharmacy
 </h1>
 <body>
 <p>
-We obtained data from the DEA Opioid Prescription Dataset (ARCOS), which tracks the path of every single pain pill sold in the US from 2006-2014. After extensive cleaning, we've managed to create the following visualizations. We whittled the data down to transactions in which the BUYER_CITY (city in which the buyer was located) were all Rhode Island towns.
+  We investigated the Injured Worker's Pharmacy, a mail order pharmacy based in Massachussets that ships opiods all across the au
 </p>
 <h2>
-	Emergency Department Visits, Overdose Deaths, and Naloxone Use
+	Growth of the Injured Worker's Pharmacy
 </h2>
 <p>
-<div id="container" class="svg-container"></div>
 <script>
         // set the dimensions and margins of the graph
         var margin = {
@@ -122,13 +121,9 @@ We obtained data from the DEA Opioid Prescription Dataset (ARCOS), which tracks 
     </script>
 </p>
 <p>
-	This graph depicts the number of emergency department visits, overdose deaths, and naloxone uses by town from the years 2016-2019. Some numbers in towns were recorded <5, and for the purposes of graphing, converted to 2.5.
-
-	The graph shows that the highest numbers of ED visits, OD deaths, and naloxone use are recorded in Providence and the surrounding area, Pawtucket, Warwick, Woonsocket, and Cranston. The high density of cases are also reflected in West Warwick and East Providence.
+This graph shows the types of opioids that IWP distributes
 </p>
 <p>
-<select id="selectButton"></select>
-<div id="container2" class="svg-container2"></div>
 <script>
 
   function myFunction() {
@@ -331,9 +326,6 @@ We obtained data from the DEA Opioid Prescription Dataset (ARCOS), which tracks 
   };
   
   </script>
-</p>
-<p>
-	The recorded peaks in Providence and the surrounding areas stay relatively stable over the years. Other towns, like Lincoln, West Warick, and Westerly experience a lot of fluctuation.
 </p>
 <ul>
 <link rel="stylesheet" type="text/css" href="../graphs/styles.css">
