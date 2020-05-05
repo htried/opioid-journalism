@@ -169,56 +169,6 @@ var lines = svg.selectAll(".lines")
     .attr("x", 5)
     .text(function(d) { return d.id; });
 
-//---------------------------POINTS-----------------------------//  
-    // lines.selectAll("points")
-    // .data(function(d) { return d.values})
-    // .enter()
-    // .append("circle")
-    // .attr("cx", function(d) { return xScale(d.municipality); })       
-    // .attr("cy", function(d) { return yScale(d.measurement); })     
-    // .attr("r", 1)
-    // .attr("class","point")
-    // .style("opacity", 1);
-
-//---------------------------EVENTS-----------------------------//    
-    // lines.selectAll("circles")
-    // .data(function(d) { return(d.values); } )
-    // .enter()
-    // .append("circle")
-    // .attr("cx", function(d) {return xScale(d.municipality); })       
-    // .attr("cy", function(d) { return yScale(d.measurement); })     
-    // .attr('r', 10)
-    // .style("opacity", 0)
-    // .on('mouseover', function(d) {
-    //     tooltip.transition()
-    // .delay(30)
-    //     .duration(200)
-    //     .style("opacity", 1);
-    //     tooltip.html(d.measurement)
-    //     .style("left", (d3.event.pageX + 25) + "px")
-    //     .style("top", (d3.event.pageY) + "px"); 
-    //     const selection = d3.select(this).raise();
-    //     selection
-    //     .transition()
-    //     .delay("20")
-    //     .duration("200")
-    //     .attr("r", 6)
-    //     .style("opacity", 1)
-    //     .style("fill","#ed3700");
-    // })                
-    // .on("mouseout", function(d) {       
-    //     tooltip.transition()        
-    //     .duration(100)      
-    //     .style("opacity", 0);  
-    //     const selection = d3.select(this);
-    //     selection
-    //     .transition()
-    //     .delay("20")
-    //     .duration("200")
-    //     .attr("r", 10)
-    //     .style("opacity", 0);
-    // });
-
     // A function that updates the chart
     function update(selectedGroup) {
         // Create new data with the selection
@@ -244,38 +194,7 @@ var lines = svg.selectAll(".lines")
                 return '#'+Math.floor(Math.random()*16777215).toString(16);
         });
 
-        // var points = lines.selectAll(".point").data(function(d) { return d.values;})
-        //     .enter()
-        //     .append("point")
-        //     .attr("class", "point");
-
-        // points.exit().remove();
-
-        // points.transition().duration(1500)
-        //     .attr("cx", function(d) { console.log(d); return xScale(d.municipality); })       
-        //     .attr("cy", function(d) { return yScale(d.measurement); })  
-        //     .attr("r", 2)
-        //     .style("opacity", 1);
-
-        // svg.selectAll(".point").remove();
-        // var points = svg.selectAll(".point").data(filtered_slice);
-
-        // points.select('circle')
-        //     .attr("d", function(d) { console.log(d); return d.values; })
-        //     .attr("cx", function(d) { return xScale(d.municipality); })       
-        //     .attr("cy", function(d) { return yScale(d.measurement); });
-
-        // let pointG = points.enter()
-        //     .append("g")
-        //     .attr('class', 'point')
-
-        // pointG.append("circle")
-        //     .attr("cx", function(d) { console.log(d); return xScale(d.municipality); })       
-        //     .attr("cy", function(d) { return yScale(d.measurement); })  
-        //     .attr("r", 2)
-        //     .style("opacity", 1);
-
-        // // Reposition labels
+        // Reposition labels
         var serie_label = svg.selectAll(".serie_label")
             .data(filtered_slice)
             .attr("class", "serie_label");
@@ -286,16 +205,6 @@ var lines = svg.selectAll(".lines")
                 var mx = d.values[d.values.length - 1];
                 return "translate(" + (xScale(mx.municipality) + 5)  
                     + "," + (yScale(mx.measurement) + 5 ) + ")"; });
-    
-        // enter any new data
-        // lines.enter()
-        //   .append("path")
-        //   .attr("class","line")
-        //   .attr("d",function(d) {return line(d.values);})
-        //   .style("stroke", function(){
-        //     return '#'+Math.floor(Math.random()*16777215).toString(16);
-        //   });
-
         // exit
         lines.exit().remove();
     }
@@ -395,7 +304,6 @@ var lines = svg.selectAll(".lines")
             return "translate(" + mouse[0] + "," + pos.y +")";
           });
       });
-
-});
+    });
 </script>
 </body>

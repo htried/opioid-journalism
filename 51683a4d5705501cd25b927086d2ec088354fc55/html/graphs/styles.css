@@ -45,6 +45,35 @@ font-size: 150%;
   shape-rendering: crispEdges;
 }
 
+path.line-0 {
+fill: none;
+stroke: #ed3700;
+}
+
+path.line-1 {
+fill: none;
+stroke: #2b2929;
+stroke-dasharray: 2;
+}
+
+path.line-2 {
+fill: none;
+stroke: #9c9c9c;
+stroke-dasharray: 6;
+}
+
+path.line-3 {
+fill: none;
+stroke: #9c9c9c;
+stroke-dasharray: 4;
+}
+
+.axis line-3 {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
 .x.axis path {
   display: none;
 }
@@ -53,4 +82,14 @@ font-size: 150%;
 .point {
 stroke: none;
 fill: #9c9c9c;
+}
+
+h1 { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; text-align: center;}
+h3 { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; padding-left: 10vw; padding-right: 10vw;}
+p { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; padding-left: 10vw; padding-right: 10vw;}
+blockquote { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; }
+pre { font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+a {
+  font-family: auto;
 }
