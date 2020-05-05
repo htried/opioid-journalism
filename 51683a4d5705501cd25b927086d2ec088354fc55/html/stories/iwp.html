@@ -1,6 +1,130 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
+<style>
+
+  /* set the CSS */
+
+  .line {
+      fill: none;
+      /*stroke: #aaa;
+      stroke: #43484c;
+      stroke: #405275;
+      stroke: rgba(40, 53, 79, .95);
+      stroke: #161719;
+      stroke: #f99e1a;*/
+      stroke: #f89e35;
+      stroke-width: 2px;
+  }
+
+  .line2 {
+      fill: none;
+      stroke: #aaa;
+      stroke-width: 2px;
+  }
+
+  .line3 {
+      fill: none;
+      stroke: #405275;
+      stroke-width: 2px;
+  }
+
+  .line3-text {
+      fill: #405275;
+      stroke: #405275;
+  }
+
+  .line2-text {
+      fill: #aaa;
+      stroke: #aaa;
+  }
+
+  .line-text {
+      fill: #f89e35;
+      stroke: #f89e35;
+  }
+
+  div.tooltip {
+      position: absolute;
+      text-align: center;
+      padding: 5px;
+      font-size: 12px;
+      font-weight: bold;
+      background: #f99e1a;
+      border: 0px;
+      border-radius: 8px;
+  }
+
+  .tooltip p {
+      margin: 0;
+      padding: 0;
+  }
+
+  circle {
+      fill: rgba(40, 53, 79, .95);
+  }
+
+  .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 960px;
+  height: 500px;
+  position: relative;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+path.slice{
+    stroke-width:2px;
+}
+
+polyline{
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+</style>
 <head>
 
 <link rel="stylesheet" href="styles.css">
