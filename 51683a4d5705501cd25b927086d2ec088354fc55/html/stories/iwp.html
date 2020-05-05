@@ -140,7 +140,6 @@
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://d3js.org/d3.v4.min.js"></script>
-
 <script>
 
 // function myFunction() {
@@ -203,7 +202,7 @@ var margin = {
 
         // Get the data
         var datalist = [];
-        d3.csv("./graphs/data/iwp_growth.csv", function (error, data) {
+        d3.csv("../graphs/data/iwp_growth.csv", function (error, data) {
             if (error) throw error;
             // scale the range of the data
             x.domain(d3.extent(data, function (d) {
