@@ -139,27 +139,8 @@
   </p>
   <p>
     <script src="https://d3js.org/d3.v3.min.js"></script>
-  
-  <select id="selectButton"></select>
-  <div id="container2" class="svg-container2"></div>
+    <div id="container2" class="svg-container2"></div>
   <script>
-  
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
-    
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
     
     var svg = d3.select("div#container2")
         .append("svg")
@@ -172,9 +153,7 @@
     svg.append("g")
         .attr("class", "lines");
     
-    var width = 960,
-        height = 450,
-        radius = Math.min(width, height) / 2;
+      var  radius = Math.min(width, height) / 2;
     
     var pie = d3.layout.pie()
         .sort(null)
@@ -218,38 +197,27 @@
         
     }
     
-    function getPharmerica () {
-        return d3.csv("../graphs/data/pharmerica_drugs.csv", function(d) {
-        return {
-        name : d.DRUG_NAME,
-        mme : d.MME,
-      };
-    }, function(data) {
-        console.log(data)
-        var zipped = data.map(function(label, i) {
-            var val =  { label: data[i].name, value: data[i].mme }
-            console.log(val)
-            return val
-        });
-        console.log(zipped)
-        change(zipped)
+    // function getPharmerica () {
+    //     return d3.csv("../graphs/data/pharmerica_drugs.csv", function(d) {
+    //     return {
+    //     name : d.DRUG_NAME,
+    //     mme : d.MME,
+    //   };
+    // }, function(data) {
+    //     console.log(data)
+    //     var zipped = data.map(function(label, i) {
+    //         var val =  { label: data[i].name, value: data[i].mme }
+    //         console.log(val)
+    //         return val
+    //     });
+    //     console.log(zipped)
+    //     change(zipped)
     
-    });
+    // });
         
-    }
+    // }
     
     getData();
-    
-    d3.select(".IWP")
-        .on("click", function(){
-            getData();
-        });
-     
-    d3.select(".Pharmerica")
-        .on("click", function(){
-            getPharmerica();
-        });
-    
     
     function change(data) {
     
