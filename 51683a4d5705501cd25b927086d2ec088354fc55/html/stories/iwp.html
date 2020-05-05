@@ -67,13 +67,13 @@
   
   </style>
 
-<div class="dropdown">
+<!-- <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Pharmacies</button>
   <div id="myDropdown" class="dropdown-content">
     <a class="IWP">IWP</a>
     <a class="Pharmerica">Pharmerica</a>
   </div>
-</div>
+</div> -->
 
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
@@ -153,25 +153,25 @@ function getData () {
     
 }
 
-function getPharmerica () {
-    return d3.csv("../graphs/data/pharmerica_drugs.csv", function(d) {
-    return {
-    name : d.DRUG_NAME,
-    mme : d.MME,
-  };
-}, function(data) {
-    console.log(data)
-    var zipped = data.map(function(label, i) {
-        var val =  { label: data[i].name, value: data[i].mme }
-        console.log(val)
-        return val
-    });
-    console.log(zipped)
-    change(zipped)
+// function getPharmerica () {
+//     return d3.csv("../graphs/data/pharmerica_drugs.csv", function(d) {
+//     return {
+//     name : d.DRUG_NAME,
+//     mme : d.MME,
+//   };
+// }, function(data) {
+//     console.log(data)
+//     var zipped = data.map(function(label, i) {
+//         var val =  { label: data[i].name, value: data[i].mme }
+//         console.log(val)
+//         return val
+//     });
+//     console.log(zipped)
+//     change(zipped)
 
-});
+// });
     
-}
+// }
 
 getData();
 
