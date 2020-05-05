@@ -21,18 +21,16 @@
 <div id="container" class="svg-container"></div>
 <script>
         // set the dimensions and margins of the graph
-        var margin = {
-                top: 20,
-                right: 20,
-                bottom: 30,
-                left: 100
-            },
-            width = 960 - margin.left - margin.right,
-            height = 500 - margin.top - margin.bottom;
+        // var margin = {
+        //         top: 20,
+        //         right: 20,
+        //         bottom: 30,
+        //         left: 100
+        //     },
+        //     width = 960 - margin.left - margin.right,
+        //     height = 500 - margin.top - margin.bottom;
 
         // set the ranges
-        var x = d3.scaleLinear().range([0, width]);
-        var y = d3.scaleLinear().range([height, 0]);
 
         // define the line
         function basicy() {
@@ -59,6 +57,9 @@
         const margin = 5;
         const padding = 5;
         const adj = 70;
+
+        var x = d3.scaleLinear().range([0, width]);
+        var y = d3.scaleLinear().range([height, 0]);
         // we are appending SVG first
         const svg = d3.select("div#container").append("svg")
             .attr("preserveAspectRatio", "xMinYMin meet")
