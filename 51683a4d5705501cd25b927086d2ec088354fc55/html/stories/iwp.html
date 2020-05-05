@@ -3,7 +3,69 @@
 <body>
 <link rel="stylesheet" type="text/css" href="../graphs/styles.css">
 <h1>Injured Worker's Pharmacy</h1>
+<p1>The Injured Worker's Pharmacy is a mail order pharmacy that shipped over ...</p1>
 <style>
+  /* set the CSS */
+    
+  .line {
+        fill: none;
+        /*stroke: #aaa;
+        stroke: #43484c;
+        stroke: #405275;
+        stroke: rgba(40, 53, 79, .95);
+        stroke: #161719;
+        stroke: #f99e1a;*/
+        stroke: #f89e35;
+        stroke-width: 2px;
+    }
+    
+    .line2 {
+        fill: none;
+        stroke: #aaa;
+        stroke-width: 2px;
+    }
+    
+    .line3 {
+        fill: none;
+        stroke: #405275;
+        stroke-width: 2px;
+    }
+    
+    .line3-text {
+        fill: #405275;
+        stroke: #405275;
+    }
+    
+    .line2-text {
+        fill: #aaa;
+        stroke: #aaa;
+    }
+    
+    .line-text {
+        fill: #f89e35;
+        stroke: #f89e35;
+    }
+    
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        padding: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        background: #f99e1a;
+        border: 0px;
+        border-radius: 8px;
+    }
+    
+    .tooltip p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    circle {
+        fill: rgba(40, 53, 79, .95);
+    }
+
   .dropbtn {
     background-color: #3498DB;
     color: white;
@@ -95,6 +157,108 @@
 //     }
 //   }
 // }
+
+// set the dimensions and margins of the graph
+var margin = {
+                top: 20,
+                right: 20,
+                bottom: 30,
+                left: 100
+            },
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+        // set the ranges
+        var x = d3.scaleLinear().range([0, width]);
+        var y = d3.scaleLinear().range([height, 0]);
+
+        // define the line  
+        function basicy() {
+            var ret = d3.line()
+                .x(function (d) {
+                    return x(d.year);
+                })
+            return ret;
+        }
+        var valueline = basicy()
+            .y(function (d) {
+                return y(d.DOSAGE_UNIT);
+            });
+
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        // append the svg obgect to the body of the page
+        // appends a 'group' element to 'svg'
+        // moves the 'group' element to the top left margin
+        var svg = d3.select("body").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        // Get the data
+        var datalist = [];
+        d3.csv("data/iwp_growth.csv", function (error, data) {
+            if (error) throw error;
+            // scale the range of the data
+            x.domain(d3.extent(data, function (d) {
+                return d.year;
+            }));
+            y.domain([0, d3.max(data, function (d) {
+                return Math.max(d.DOSAGE_UNIT);
+            })]);
+
+            // add the valueline path.
+            var dataArray = [{
+                "name": "Number of Pills",
+                "x": 100,
+                "y": 50,
+                "class": "line-text",
+                "class2": "line",
+                "dataline": valueline
+            }]
+
+            for (var i = 0; i < dataArray.length; i++) {
+                svg.append("path")
+                    .data([data])
+                    .attr("class", dataArray[i].class2)
+                    .attr("d", dataArray[i].dataline) 
+            }
+
+            // add the dots with tooltips
+            var fixeddot = svg.selectAll("dot")
+                .data(data)
+                .enter().append("circle")
+                .attr("r", 5)
+
+            fixeddot.attr("cx", function (d) {
+                    return x(d.year);
+                })
+                .attr("cy", function (d) {
+                    return y(d.DOSAGE_UNIT);
+                })
+                .on("mouseover", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html("<p>Year: " + d.year + "</p> <p>Pill Count: " + d.DOSAGE_UNIT + "</p>")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                }); 
+
+            // add the X Axis
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x));
+
+            // add the Y Axis
+            svg.append("g")
+                .call(d3.axisLeft(y));
+
+        });
 
 var svg = d3.select("body")
     .append("svg")
