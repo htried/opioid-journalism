@@ -33,18 +33,6 @@ body {
 <body>
 <script type="text/javascript">
 
-/*  This visualization was made possible by modifying code provided by:
-
-Scott Murray, Choropleth example from "Interactive Data Visualization for the Web"
-https://github.com/alignedleft/d3-book/blob/master/chapter_12/05_choropleth.html
-
-Malcolm Maclean, tooltips example tutorial
-http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
-
-Mike Bostock, Pie Chart Legend
-http://bl.ocks.org/mbostock/3888852  */
-
-
 //Width and height of map
 var width = 1280;
 var height = 650;
@@ -53,7 +41,7 @@ var numberParse = d3.format(",");
 var formatDecimalComma = d3.format(",.2f");
 
 // D3 Projection
-var projection = albersUsaAll()
+var projection = albersUsaAll()					// all USA territory
 				   .translate([width/2, height/2])    // translate to center of screen
 				   .scale([1250]);          // scale things down so see entire US
 
@@ -175,6 +163,7 @@ d3.csv("data/state_drugs_coord_all.csv", function(data) {
 	         .style("opacity", 0);
 	  });
 
+		// add title of graphic
 		svg.append("text")
 	        .attr("x", (width / 2))
 	        .attr("y", 35)
