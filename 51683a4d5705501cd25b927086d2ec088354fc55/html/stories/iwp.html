@@ -129,16 +129,16 @@ polyline{
 
 <link rel="stylesheet" href="styles.css">
 </head>
-<h3>
+<h1>
 	Injured Worker's Pharmacy
-</h3>
+</h1>
 <body>
 <p>
-  We investigated the Injured Worker's Pharmacy, a mail order pharmacy based in Massachussets that ships opiods all across the US.
+  We investigated the Injured Worker's Pharmacy, a mail order pharmacy based in Massachussets that ships opiods all across the US
 </p>
-<h1>
+<h2>
 	Growth of the Injured Worker's Pharmacy
-</h1>
+</h2>
 <p>
   <script src="https://d3js.org/d3.v4.min.js"></script>
 
@@ -169,7 +169,7 @@ polyline{
                 return y(d.DOSAGE_UNIT);
             });
 
-        var div = d3.select("div#container").append("div")
+        var div = d3.select("body").append("div")
             .attr("class", "tooltip")
             .style("opacity", 0);
 
