@@ -142,15 +142,15 @@
     <div id="container2" class="svg-container2"></div>
   <script>
     
-    var svg = d3.select("div#container2")
+    var svg2 = d3.select("div#container2")
         .append("svg")
         .append("g")
     
-    svg.append("g")
+    svg2.append("g")
         .attr("class", "slices");
-    svg.append("g")
+    svg2.append("g")
         .attr("class", "labels");
-    svg.append("g")
+    svg2.append("g")
         .attr("class", "lines");
     
       var  radius = Math.min(width, height) / 2;
@@ -161,15 +161,15 @@
             return d.value;
         });
     
-    var arc = d3.svg.arc()
+    var arc = d3.svg2.arc()
         .outerRadius(radius * 0.8)
         .innerRadius(radius * 0.4);
     
-    var outerArc = d3.svg.arc()
+    var outerArc = d3.svg2.arc()
         .innerRadius(radius * 0.9)
         .outerRadius(radius * 0.9);
     
-    svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    svg2.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
     
     var key = function(d){ return d.data.label; };
     
@@ -223,7 +223,7 @@
     
         /* ------- PIE SLICES -------*/
         console.log(data)
-        var slice = svg.select(".slices").selectAll("path.slice")
+        var slice = svg2.select(".slices").selectAll("path.slice")
             .data(pie(data), key);
     
         slice.enter()
@@ -247,7 +247,7 @@
     
         /* ------- TEXT LABELS -------*/
     
-        var text = svg.select(".labels").selectAll("text")
+        var text = svg2.select(".labels").selectAll("text")
             .data(pie(data), key);
     
         text.enter()
@@ -288,7 +288,7 @@
     
         /* ------- SLICE TO TEXT POLYLINES -------*/
     
-        var polyline = svg.select(".lines").selectAll("polyline")
+        var polyline = svg2.select(".lines").selectAll("polyline")
             .data(pie(data), key);
         
         polyline.enter()
