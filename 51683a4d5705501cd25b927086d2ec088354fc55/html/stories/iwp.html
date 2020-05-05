@@ -1,15 +1,340 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
+<head>
+<script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<h1>
+	Injured Worker's Pharmacy
+</h1>
 <body>
+<p>
+  We investigated the Injured Worker's Pharmacy, a mail order pharmacy based in Massachussets that ships opiods all across the au
+</p>
+<h2>
+	Growth of the Injured Worker's Pharmacy
+</h2>
+<p>
+<script>
+        // set the dimensions and margins of the graph
+        var margin = {
+                top: 20,
+                right: 20,
+                bottom: 30,
+                left: 100
+            },
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+        // set the ranges
+        var x = d3.scaleLinear().range([0, width]);
+        var y = d3.scaleLinear().range([height, 0]);
+
+        // define the line
+        function basicy() {
+            var ret = d3.line()
+                .x(function (d) {
+                    return x(d.year);
+                })
+            return ret;
+        }
+        var valueline = basicy()
+            .y(function (d) {
+                return y(d.DOSAGE_UNIT);
+            });
+
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        // append the svg obgect to the body of the page
+        // appends a 'group' element to 'svg'
+        // moves the 'group' element to the top left margin
+        var svg = d3.select("body").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        // Get the data
+        var datalist = [];
+        d3.csv("../graphs/data/iwp_growth.csv", function (error, data) {
+            if (error) throw error;
+            // scale the range of the data
+            x.domain(d3.extent(data, function (d) {
+                return d.year;
+            }));
+            y.domain([0, d3.max(data, function (d) {
+                return Math.max(d.DOSAGE_UNIT);
+            })]);
+
+            // add the valueline path.
+            var dataArray = [{
+                "name": "Number of Pills",
+                "x": 100,
+                "y": 50,
+                "class": "line-text",
+                "class2": "line",
+                "dataline": valueline
+            }]
+
+            for (var i = 0; i < dataArray.length; i++) {
+                svg.append("path")
+                    .data([data])
+                    .attr("class", dataArray[i].class2)
+                    .attr("d", dataArray[i].dataline)
+            }
+
+            // add the dots with tooltips
+            var fixeddot = svg.selectAll("dot")
+                .data(data)
+                .enter().append("circle")
+                .attr("r", 5)
+
+            fixeddot.attr("cx", function (d) {
+                    return x(d.year);
+                })
+                .attr("cy", function (d) {
+                    return y(d.DOSAGE_UNIT);
+                })
+                .on("mouseover", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html("<p>Year: " + d.year + "</p> <p>Pill Count: " + d.DOSAGE_UNIT + "</p>")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                });
+
+            // add the X Axis
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x));
+
+            // add the Y Axis
+            svg.append("g")
+                .call(d3.axisLeft(y));
+
+        });
+    </script>
+</p>
+<p>
+This graph shows the types of opioids that IWP distributes
+</p>
+<p>
+<script>
+
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  
+  var svg = d3.select("body")
+      .append("svg")
+      .append("g")
+  
+  svg.append("g")
+      .attr("class", "slices");
+  svg.append("g")
+      .attr("class", "labels");
+  svg.append("g")
+      .attr("class", "lines");
+  
+  var width = 960,
+      height = 450,
+      radius = Math.min(width, height) / 2;
+  
+  var pie = d3.layout.pie()
+      .sort(null)
+      .value(function(d) {
+          return d.value;
+      });
+  
+  var arc = d3.svg.arc()
+      .outerRadius(radius * 0.8)
+      .innerRadius(radius * 0.4);
+  
+  var outerArc = d3.svg.arc()
+      .innerRadius(radius * 0.9)
+      .outerRadius(radius * 0.9);
+  
+  svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+  
+  var key = function(d){ return d.data.label; };
+  
+  var color = d3.scale.ordinal()
+      .domain(["5", "dolor sit", "amet", "consectetur", "adipisicing", "elit", "sed", "do", "eiusmod", "tempor", "incididunt"])
+      .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+  
+  function getData () {
+      return d3.csv("../graphs/data/iwp_drugs.csv", function(d) {
+      return {
+      name : d.DRUG_NAME,
+      mme : d.MME,
+    };
+  }, function(data) {
+      console.log(data)
+      var zipped = data.map(function(label, i) {
+          var val =  { label: data[i].name, value: data[i].mme }
+          console.log(val)
+          return val
+      });
+      console.log(zipped)
+      change(zipped)
+  
+  });
+      
+  }
+  
+  function getPharmerica () {
+      return d3.csv("../graphs/data/pharmerica_drugs.csv", function(d) {
+      return {
+      name : d.DRUG_NAME,
+      mme : d.MME,
+    };
+  }, function(data) {
+      console.log(data)
+      var zipped = data.map(function(label, i) {
+          var val =  { label: data[i].name, value: data[i].mme }
+          console.log(val)
+          return val
+      });
+      console.log(zipped)
+      change(zipped)
+  
+  });
+      
+  }
+  
+  getData();
+  
+  d3.select(".IWP")
+      .on("click", function(){
+          getData();
+      });
+   
+  d3.select(".Pharmerica")
+      .on("click", function(){
+          getPharmerica();
+      });
+  
+  
+  function change(data) {
+  
+      /* ------- PIE SLICES -------*/
+      console.log(data)
+      var slice = svg.select(".slices").selectAll("path.slice")
+          .data(pie(data), key);
+  
+      slice.enter()
+          .insert("path")
+          .style("fill", function(d) { return color(d.data.label); })
+          .attr("class", "slice");
+  
+      slice       
+          .transition().duration(1000)
+          .attrTween("d", function(d) {
+              this._current = this._current || d;
+              var interpolate = d3.interpolate(this._current, d);
+              this._current = interpolate(0);
+              return function(t) {
+                  return arc(interpolate(t));
+              };
+          })
+  
+      slice.exit()
+          .remove();
+  
+      /* ------- TEXT LABELS -------*/
+  
+      var text = svg.select(".labels").selectAll("text")
+          .data(pie(data), key);
+  
+      text.enter()
+          .append("text")
+          .attr("dy", ".35em")
+          .text(function(d) {
+              return d.data.label;
+          });
+      
+      function midAngle(d){
+          return d.startAngle + (d.endAngle - d.startAngle)/2;
+      }
+  
+      text.transition().duration(1000)
+          .attrTween("transform", function(d) {
+              this._current = this._current || d;
+              var interpolate = d3.interpolate(this._current, d);
+              this._current = interpolate(0);
+              return function(t) {
+                  var d2 = interpolate(t);
+                  var pos = outerArc.centroid(d2);
+                  pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
+                  return "translate("+ pos +")";
+              };
+          })
+          .styleTween("text-anchor", function(d){
+              this._current = this._current || d;
+              var interpolate = d3.interpolate(this._current, d);
+              this._current = interpolate(0);
+              return function(t) {
+                  var d2 = interpolate(t);
+                  return midAngle(d2) < Math.PI ? "start":"end";
+              };
+          });
+  
+      text.exit()
+          .remove();
+  
+      /* ------- SLICE TO TEXT POLYLINES -------*/
+  
+      var polyline = svg.select(".lines").selectAll("polyline")
+          .data(pie(data), key);
+      
+      polyline.enter()
+          .append("polyline");
+  
+      polyline.transition().duration(1000)
+          .attrTween("points", function(d){
+              this._current = this._current || d;
+              var interpolate = d3.interpolate(this._current, d);
+              this._current = interpolate(0);
+              return function(t) {
+                  var d2 = interpolate(t);
+                  var pos = outerArc.centroid(d2);
+                  pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+                  return [arc.centroid(d2), outerArc.centroid(d2), pos];
+              };          
+          });
+      
+      polyline.exit()
+          .remove();
+  };
+  
+  </script>
+</p>
+<ul>
 <link rel="stylesheet" type="text/css" href="../graphs/styles.css">
   <ul>
-    <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/pharmacies.html">ARCOS/Pharmacies</a></li>
     <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/dollars4docs.html">Dollars for Docs</a></li>
+    <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/iwp.html">Injured Workers Pharmacy</a></li>
     <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/ods.html">Overdoses in Providence</a></li>
     <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/rhodes.html">Rhodes</a></li>
     <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/courtdata.html">Court Data</a></li>
   </ul>
-
-
 </body>
 </html>
