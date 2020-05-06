@@ -64,34 +64,11 @@ polyline{
 
 </style>
 <body>
- <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Pharmacies</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a class="IWP">IWP</a>
-    <a class="Pharmerica">Pharmerica</a>
-  </div>
-</div>
+<h1>IWP Drug Distribution</h1>
 
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
-
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
 var svg = d3.select("body")
     .append("svg")
@@ -175,11 +152,6 @@ getData();
 d3.select(".IWP")
     .on("click", function(){
         getData();
-    });
- 
-d3.select(".Pharmerica")
-    .on("click", function(){
-        getPharmerica();
     });
 
 
@@ -276,5 +248,6 @@ function change(data) {
 };
 
 </script>
+<p1>The majority of the drugs that IWP sells are Fentanyl, but they also distribute a large number of Oxycodone pills.</p1>
 </body>
  
