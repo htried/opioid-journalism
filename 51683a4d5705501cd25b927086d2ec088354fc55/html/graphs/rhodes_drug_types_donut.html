@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head>
 <style>
+.nextPreviousButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-container2 {
+  height: 450px;
+  width: 800px;
+}
+
 .dropbtn {
   background-color: #3498DB;
   color: white;
@@ -41,14 +52,38 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 960px;
-  height: 500px;
+  margin-left: 50px;
   position: relative;
 }
 
 svg {
     width: 100%;
     height: 100%;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #002147;
+    color: white;
+}
+
+.round {
+    border-radius: 15px;
 }
 
 path.slice{
@@ -67,8 +102,18 @@ text{
   font-size: 12px;
 }
 
+.legend {
+	position:absolute;
+	left:800px;
+	top:350px;
+}
 </style>
+<title>Rhodes Drug Types</title>
+</head>
+
 <body>
+
+  <h2>Rhodes Drug Types Per Year</h2>
  <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Year</button>
   <div id="myDropdown" class="dropdown-content">
@@ -81,6 +126,7 @@ text{
   </div>
 </div>
 
+<div id="container2" class="svg-container2"></div>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
@@ -102,7 +148,7 @@ window.onclick = function(event) {
   }
 }
 
-var svg = d3.select("body")
+var svg = d3.select("div#container2")
     .append("svg")
     .append("g")
 
@@ -140,7 +186,7 @@ var color = d3.scale.ordinal()
     .domain(["HYDROMORPHONE HYDROCHLORIDE", "HYDROCODONE BITARTRATE HEMIPENTAHYDRATE", "OXYCODONE HYDROCHLORIDE", "BUPRENORPHINE", "MORPHINE SULFATE PENTAHYDRATE(I.E.,5H20)", "OXYMORPHONE HYDROCHLORIDE"])
     .range(["#98abc5", "#8a89a6", "#6b486b", "#a05d56", "#ff8c00", "#ff0000"]);
 
-var legend = d3.select("body").append("svg")
+var legend = d3.select("div#container2").append("svg")
       .attr("class", "legend")
       .attr("width", radius * 2)
       .attr("height", radius * 2)
@@ -308,4 +354,10 @@ function change(data, year) {
 };
 
 </script>
+<br><br>
+<p>This graphic is showing the share of each drug ingredient's quantity of transactions for Rhodes Pharma per year from 2009-2014. The graph starts off by depicting 2009's shares with only having Hydromorphone. The next year, we have oxycodone and hydrocodone come in. Morphine takes over the majority of the pie in 2011-2014. Oxycodone share has a significant increase from 2012-2014.</p>
+<div class="nextPreviousButtons">
+  <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/graphs/purdue_drug_types_donut.html" class="previous round">&laquo; Previous</a>
+  <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/graphs/drugs_map.html" class="next round">Transactions Map &raquo;</a>
+</div>
 </body>

@@ -127,7 +127,6 @@ function chart(csv) {
     var moneyParse = function(d) { return "$" + formatDecimalComma(d); };
 
 		var data = csv.filter(f => f.category == input)
-    console.log(data)
 
     var dataset = ["Purdue Pharma", "Rhodes Pharma"].map(function(pharma) {
       return data.map(function(d) {

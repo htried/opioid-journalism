@@ -1,13 +1,42 @@
-h1 {
-	text-align: center
+h1 { text-align: center;}
+h2 { text-align: center;}
+
+.nextPreviousButtons {
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-h2 {
-	text-align: center
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+		align-self: center;
 }
 
-p {
-	text-align: center
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #002147;
+    color: white;
+}
+
+.round {
+    border-radius: 15px;
+}
+
+body{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
 }
 
 /* AXES */
