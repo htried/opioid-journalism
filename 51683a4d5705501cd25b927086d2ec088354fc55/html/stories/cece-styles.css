@@ -6,8 +6,10 @@ h2 {
 	text-align: center
 }
 
-p {
-	text-align: center
+body{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
 }
 
 /* AXES */
