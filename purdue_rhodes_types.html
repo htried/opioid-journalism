@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-.nextPreviousButtons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .dropbtn {
   background-color: #3498DB;
   color: white;
@@ -42,12 +37,56 @@
 
 .dropdown-content a:hover {background-color: #ddd}
 
+
 .show {display:block;}
+
+.svg-container1 {
+  height: 450px;
+  width: 800px;
+}
 
 .svg-container2 {
   height: 450px;
   width: 800px;
 }
+
+.dropbtn2 {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn2:hover, .dropbtn2:focus {
+  background-color: #2980B9;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 a:hover {background-color: #ddd}
+
+.show2 {display:block;}
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -77,40 +116,8 @@ text{
   font-size: 12px;
 }
 
-.legend {
-	position:absolute;
-	left:800px;
-	top:350px;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 16px;
-}
-
-a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.previous {
-    background-color: #f1f1f1;
-    color: black;
-}
-
-.next {
-    background-color: #002147;
-    color: white;
-}
-
-.round {
-    border-radius: 15px;
-}
-
 </style>
 <body>
-
 <h2>Purdue Drug Types Per Year</h2>
  <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Year</button>
@@ -127,7 +134,7 @@ a:hover {
   </div>
 </div>
 
-<div id="container2" class="svg-container2"></div>
+<div id="container1" class="svg-container1"></div>
 
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script>
@@ -149,7 +156,7 @@ window.onclick = function(event) {
   }
 }
 
-var svg = d3.select("div#container2")
+var svg = d3.select("div#container1")
     .append("svg")
     .append("g")
 
@@ -187,7 +194,7 @@ var color = d3.scale.ordinal()
     .domain(["HYDROMORPHONE HYDROCHLORIDE", "HYDROCODONE BITARTRATE HEMIPENTAHYDRATE", "OXYCODONE HYDROCHLORIDE", "BUPRENORPHINE", "MORPHINE SULFATE PENTAHYDRATE(I.E.,5H20)"])
     .range(["#98abc5", "#8a89a6", "#6b486b", "#a05d56", "#ff8c00"]);
 
-var legend = d3.select("div#container2").append("svg")
+var legend = d3.select("div#container1").append("svg")
       .attr("class", "legend")
       .attr("width", radius * 2)
       .attr("height", radius * 2)
@@ -231,7 +238,7 @@ console.log("zipped")
   });
 }
 
-getData("2006");
+// getData("2006");
 
 d3.select(".six")
   .on("click", function(){
@@ -370,9 +377,262 @@ function change(data) {
 };
 
 </script>
-<br><br>
-<div class="nextPreviousButtons">
-  <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/graphs/multi-drug_combined.html" class="previous round">&laquo; Previous</a>
-  <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/graphs/rhodes_drug_types_donut.html" class="next round">Rhodes Drug Types &raquo;</a>
+
+<h2>Rhodes Drug Types Per Year</h2>
+ <div class="dropdown2">
+  <button onclick="myFunction2()" class="dropbtn2">Year</button>
+  <div id="myDropdown2" class="dropdown-content2">
+    <a class="six2">2006</a>
+    <a class="seven2">2007</a>
+    <a class="eight2">2008</a>
+    <a class="nine2">2009</a>
+    <a class="ten2">2010</a>
+    <a class="eleven2">2011</a>
+    <a class="twelve2">2012</a>
+    <a class="thirteen2">2013</a>
+    <a class="fourteen2">2014</a>
+  </div>
 </div>
+
+<div id="container2" class="svg-container2"></div>
+<script>
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show2')) {
+        openDropdown.classList.remove('show2');
+      }
+    }
+  }
+}
+
+var svg2 = d3.select("div#container2")
+    .append("svg")
+    .append("g")
+
+svg2.append("g")
+    .attr("class", "slices");
+svg2.append("g")
+    .attr("class", "labels");
+svg2.append("g")
+    .attr("class", "lines");
+//
+// var width = 960,
+//     height = 450,
+//     margin = 30,
+//     radius = Math.min(width, height) / 2;
+
+var pie2 = d3.layout.pie()
+    .sort(null)
+    .value(function(d) {
+        return d.value;
+    });
+
+var arc2 = d3.svg.arc()
+    .innerRadius(radius * 0.4)
+    .outerRadius(radius * 0.8);
+
+var outerArc2 = d3.svg.arc()
+    .innerRadius(radius * 0.9)
+    .outerRadius(radius * 0.9);
+
+svg2.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+var key2 = function(d){ return d.data.label; };
+
+var color2 = d3.scale.ordinal()
+    .domain(["HYDROMORPHONE HYDROCHLORIDE", "HYDROCODONE BITARTRATE HEMIPENTAHYDRATE", "OXYCODONE HYDROCHLORIDE", "BUPRENORPHINE", "MORPHINE SULFATE PENTAHYDRATE(I.E.,5H20)"])
+    .range(["#98abc5", "#8a89a6", "#6b486b", "#a05d56", "#ff8c00"]);
+
+var legend2 = d3.select("div#container2").append("svg")
+      .attr("class", "legend")
+      .attr("width", radius * 2)
+      .attr("height", radius * 2)
+    .selectAll("g")
+      .data(color2.domain().slice())
+    .enter().append("g")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend2.append("rect")
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", color);
+
+  legend2.append("text")
+      .attr("x", 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .text(function(d) { return d; });
+
+function getData2 (year_selected) {
+  return d3.csv("data/rhodes_drug_types.csv", function(d) {
+    return {
+      year: d.year,
+      name : d.Ingredient_Name,
+      quantity : d.QUANTITY,
+    };
+  }, function(data) {
+    console.log(data)
+    console.log(year_selected)
+    var filtered = data.filter(function (d) { console.log(d.year == year_selected)
+      return d.year == year_selected});
+    console.log("filtered")
+    console.log(filtered)
+    var zipped = filtered.map(function(label, i) {
+        var val =  { label: filtered[i].name, value: filtered[i].quantity }
+        return val
+    });
+console.log("zipped")
+    console.log(zipped)
+    change2(zipped)
+  });
+}
+
+getData2("2006");
+
+d3.select(".six")
+  .on("click", function(){
+        getData2("2006");
+    });
+
+d3.select(".seven")
+  .on("click", function(){
+        getData2("2007");
+    });
+
+d3.select(".eight")
+  .on("click", function(){
+        getData2("2008");
+    });
+
+d3.select(".nine")
+  .on("click", function(){
+        getData2("2009");
+    });
+
+d3.select(".ten")
+    .on("click", function(){
+        getData2("2010");
+    });
+
+d3.select(".eleven")
+    .on("click", function(){
+        getData2("2011");
+    });
+
+d3.select(".twelve")
+    .on("click", function(){
+        getData2("2012");
+    });
+
+d3.select(".thirteen")
+    .on("click", function(){
+        getData2("2013");
+    });
+
+d3.select(".fourteen")
+    .on("click", function(){
+        getData2("2014");
+    });
+
+function change2(data) {
+
+    /* ------- PIE SLICES -------*/
+    var slice2 = svg.select(".slices").selectAll("path.slice")
+        .data(pie2(data), key2);
+
+    slice2.enter()
+        .insert("path")
+        .style("fill", function(d) { return color2(d.data.label); })
+        .attr("class", "slice");
+
+    slice2
+        .transition().duration(1000)
+        .attrTween("d", function(d) {
+            this._current = this._current || d;
+            var interpolate = d3.interpolate(this._current, d);
+            this._current = interpolate(0);
+            return function(t) {
+                return arc2(interpolate(t));
+            };
+        })
+
+    slice2.exit()
+        .remove();
+
+    /* ------- TEXT LABELS -------*/
+
+    var text2 = svg2.select(".labels").selectAll("text")
+        .data(pie2(data), key2);
+
+    text2.enter()
+        .append("text")
+        .attr("dy", ".35em")
+        .text(function(d) {
+            return d.data.label.split(" ")[0];
+        });
+
+    function midAngle2(d){
+        return d.startAngle + (d.endAngle - d.startAngle)/2;
+    }
+
+    text2.transition().duration(1000)
+        .attrTween("transform", function(d) {
+            this._current = this._current || d;
+            var interpolate = d3.interpolate(this._current, d);
+            this._current = interpolate(0);
+            return function(t) {
+                var d2 = interpolate(t);
+                var pos = outerArc.centroid(d2);
+                pos[0] = radius * (midAngle2(d2) < Math.PI ? 1 : -1);
+                return "translate("+ pos +")";
+            };
+        })
+        .styleTween("text-anchor", function(d){
+            this._current = this._current || d;
+            var interpolate = d3.interpolate(this._current, d);
+            this._current = interpolate(0);
+            return function(t) {
+                var d2 = interpolate(t);
+                return midAngle(d2) < Math.PI ? "start":"end";
+            };
+        });
+
+    text2.exit()
+        .remove();
+
+    /* ------- SLICE TO TEXT POLYLINES -------*/
+
+    var polyline2 = svg2.select(".lines").selectAll("polyline")
+        .data(pie2(data), key2);
+
+    polyline2.enter()
+        .append("polyline");
+
+    polyline2.transition().duration(1000)
+        .attrTween("points", function(d){
+            this._current = this._current || d;
+            var interpolate = d3.interpolate(this._current, d);
+            this._current = interpolate(0);
+            return function(t) {
+                var d2 = interpolate(t);
+                var pos = outerArc2.centroid(d2);
+                pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+                return [arc2.centroid(d2), outerArc2.centroid(d2), pos];
+            };
+        });
+
+    polyline2.exit()
+        .remove();
+};
+
+</script>
 </body>

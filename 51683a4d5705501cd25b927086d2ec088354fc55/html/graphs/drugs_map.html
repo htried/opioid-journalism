@@ -5,6 +5,60 @@
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="albers-usa-all.js"></script>
 <style type="text/css">
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #002147;
+    color: white;
+}
+
+.round {
+    border-radius: 15px;
+}
+
+.nextPreviousButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
 
 /* On mouse hover, lighten state color */
 path:hover {
@@ -30,7 +84,10 @@ body {
 
 </style>
 </head>
+
 <body>
+	
+<div id="container" class="svg-container"></div>
 <script type="text/javascript">
 
 //Width and height of map
@@ -50,7 +107,7 @@ var path = d3.geo.path()               // path generator that will convert GeoJS
 		  	 .projection(projection);  // tell path generator to use albersUsa projection
 
 //Create SVG element and append map to the SVG
-var svg = d3.select("body")
+var svg = d3.select("div#container")
 			.append("svg")
 			.attr("width", width)
 			.attr("height", height);
@@ -183,5 +240,10 @@ d3.csv("data/state_drugs_coord_all.csv", function(data) {
 	});
 });
 </script>
+<br><br>
+<div class="nextPreviousButtons">
+  <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/graphs/rhodes_drug_types_donut.html" class="previous round">&laquo; Previous</a>
+  <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/dollars4docs.html" class="next round">Dollars for Docs&raquo;</a>
+</div>
 </body>
 </html>
