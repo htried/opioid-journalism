@@ -1,7 +1,7 @@
 function albersUsaAll() {
   var ε = 1e-6;
 
-  var lower48 = d3.geo.Albers();
+  var lower48 = d3.geoAlbers();
 
   // EPSG:3338
   var alaska = d3.geo.conicEqualArea()

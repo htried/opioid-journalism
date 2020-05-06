@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <script src="https://d3js.org/d3.v3.min.js"></script>
-<!-- <script src="albers-usa-all.js"></script> -->
+<script src="albers-usa-all.js"></script>
 <style type="text/css">
 
 /* On mouse hover, lighten state color */
@@ -41,7 +41,7 @@ var numberParse = d3.format(",");
 var formatDecimalComma = d3.format(",.2f");
 
 // D3 Projection
-var projection = d3.geo.albersUsa()				// all USA territory
+var projection = albersUsaAll()					// all USA territory
 				   .translate([width/2, height/2])    // translate to center of screen
 				   .scale([1250]);          // scale things down so see entire US
 
@@ -62,7 +62,7 @@ var div = d3.select("body")
     		.style("opacity", 0);
 
 // Load in my states data!
-d3.csv("data/state_drugs_coord.csv", function(data) {
+d3.csv("data/state_drugs_coord_all.csv", function(data) {
 
 	// Load GeoJSON data and merge with states data
 	d3.json("us-states.json", function(json) {
@@ -72,7 +72,7 @@ d3.csv("data/state_drugs_coord.csv", function(data) {
 
 		// Grab State Name
 		var dataState = data[i].BUYER_STATE;
-		console.log(dataState)
+
 		// Grab quantity
 		var dataQuantity = data[i].QUANTITY;
 
@@ -136,8 +136,6 @@ d3.csv("data/state_drugs_coord.csv", function(data) {
 		.enter()
 		.append("circle")
 		.attr("cx", function(d) {
-			console.log(d.BUYER_STATE)
-			console.log(projection([d.lon, d.lat]))
 			return projection([d.lon, d.lat])[0];
 		})
 		.attr("cy", function(d) {
