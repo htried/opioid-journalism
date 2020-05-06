@@ -81,22 +81,67 @@
 
   <h2> Basic Information </h2>
   <ul>
-    <li>Pharmaceutical companies are required by law to release details of their payments to doctors and U.S. teaching hospitals for:</li>
-    <ul>
-    </ul>
+    <li>ProPublica is a nonprofit organization based in NYC that aims to produce investigative journalism in the public interest.</li>
+    <li/>ProPublica's Dollars for Docs dataset is from the source data provided by the Centers of Medicare & Medicaid Services.
+    <li/>The dataset contains all the payments made from August 1, 2013 to December 31, 2015.
+    <li/>The Dollars for Docs dataset was $250 on the ProPublic website, so we obtained the each year's Open Payments Dataset from the CMS website and processed the data on our own.
+    <li/>There are some slight changes in data collection between 2015 and 2016, so 2013-2015 datasets had the same format and 2016-2018 had a different one.
+    <li/>Pharmaceutical and medical device companies are required by law to release details of their payments to doctors and U.S. teaching hospitals for a variety of categories
+    <li>The Nature of Payments included:</li>
+      <ul>
+        <li><a style="font-family: auto" href="https://www.cms.gov/OpenPayments/About/Natures-of-Payment">See full list with definition and examples here.</a></li>
+        <li>Consulting fee</li>
+        <li>Food and beverage</li>
+        <ul><li>A sales person from a drug manufacturer asks a physician if they can talk with them about a new drug. They meet over lunch, and the salesperson pays for the meal.</li></ul>
+        <li/>Travel and lodging
+        <li/>Gift
+        <ul><li>Promotional items such as clocks or flash drives that have the company’s name printed on them.</li></ul>
+        <li/>Entertainment
+        <ul><li>Tickets to sporting events, concerts or theater shows.</li></ul>
+        <li/>Education
+        <ul><li>Companies that produce or sell drugs or devices for a particular medical condition may offer textbooks to physicians, free of charge, related to the latest treatments for that condition.</li></ul>
+        <li/>Research
+        <ul><li>Payment for different types of research activities, including enrolling patients into studies of new drugs or devices.</li></ul>
+        <li/>Charitable contribution
+        <ul><li>Any payment or transfer of value made to an organization with tax-exempt status under the Internal Revenue Code of 1986, but only if it is not more specifically described by one of the other nature or payment categories.</li></ul>
+        <li/>Royalty or license
+        <li/>Current or prospective ownership or investment interest
+        <ul><li>Ownership or investment interests currently held by physicians and teaching hospitals, as well as ownership interests or investments that physicians and teaching hospitals have not yet exercised.</li></ul>
+        <li/>Compensation for serving as faculty or as a speaker for an unaccredited and non-certified continuing education program
+        <li/>Compensation for serving as faculty or as a speaker for an accredited or certified continuing education program
+        <li/>Grant
+        <li>Space rental or facility fees</li>
+      </ul>
+      <li/>Compiled a <b><a href="https://docs.google.com/spreadsheets/d/142WL0tSvX-Dp1AoHdeNecivOmi43ATPO-9PWxb_n1zQ/edit?usp=sharing">Master List</a></b>of RI doctors that were paid by Purdue and Rhodes from 2013-2018.
+      <ul><li/>These doctors were filtered out by the transaction details.
+        <li/>We filtered for opioid drugs that were listed in their transaction details.
+        <ul><li>Got the complete list of drugs from this <a href="https://www.hopkinsmedicine.org/opioids/what-are-opioids.html">website</a></ul></li>
+        <li/>For the 2016-2018 dataset, we also filtered additionally for Product and Therapeautic Categories that involved pain/pain management and opioid to get the most accurate picture.
+        <li>Categories used were:</li>
+        <ul>
+          <li/>pain
+          <li/>opioid analgesic
+          <li/>opioid addiction
+          <li/>maintenance treatment of opioid dependence
+          <li/>opioid antagonistopioid induced constipation
+          <li/>for the management of pain due to oral lesions
+          <li/>pain management
+          <li/>anesthesiology (pain management)
+          <li/>pain management pump
+          <li/>anesthesia and pain
+          <li/>inflammation;pain
+        </ul>
   </ul>
   <h1>Payments to Doctors</h1>
-
-  <svg id="chart" width="750" height="500"></svg>
+  <svg id="chart" width="1080" height="500"></svg>
 <div class = "checkbox">
-  Select year:
+  Select filter:
   <select id="category"></select>
 
   <input type="checkbox" id="sort">
   Toggle sort
 </div>
   <script>
-
   d3.csv("../graphs/data/master_dollars.csv").then(d => chart(d))
 
   function chart(csv) {
@@ -116,7 +161,7 @@
   		.text(d => d)
 
   	var svg = d3.select("#chart"),
-  		margin = {top: 50, left: 35, bottom: 5, right: 35},
+  		margin = {top: 50, left: 50, bottom: 15, right: 35},
   		width = +svg.attr("width") - margin.left - margin.right,
   		height = +svg.attr("height") - margin.top - margin.bottom;
 
@@ -150,7 +195,7 @@
       .attr("x",0 - (height / 2))
       .attr("dy", "1em")
       .style("text-anchor", "middle")
-      .style("font-size", "12px")
+      .style("font-size", "15px")
       .text("Payments ($)");
 
     // add legend
@@ -234,6 +279,9 @@
 
   		svg.selectAll(".x-axis").transition().duration(speed)
   			.call(d3.axisBottom(x).tickSizeOuter(0))
+      //   var g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
 
   		var group = svg.selectAll("g.layer")
   			.data(d3.stack().keys(keys)(data), d => d.key)
@@ -263,7 +311,6 @@
           tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
           tooltip.select("text").text(moneyParse(d[1]-d[0]));
         });
-
 
   		var text = svg.selectAll(".text")
   			.data(data, d => d.year);
@@ -308,8 +355,8 @@
       .attr("font-size", "12px")
       .attr("font-weight", "bold");
   }
-
-
   </script>
+
+  <p>The graph above compares the total amount of money Purdue and Rhodes have paid doctors nationally and filtered just for Rhode Island. You can also toggle sort each graph to see the years sorted in descending order based on the total amount paid by Purdue and Rhodes. For both graphs, there is an enormous spike in 2015, especially in Rhode Island. Purdue paid doctors a total of 3 times more from 2014 to 2015 and then dropped to less than 12 times the amount in 2016. Rhodes started paying doctors in Rhode Island starting 2016, while they started paying doctors in other states in 2015. Be aware that 2013 does not depict the entire calendar year of 2013, August-December, which only consists of 5 months from the calendar year.</p>
 </body>
 </html>
