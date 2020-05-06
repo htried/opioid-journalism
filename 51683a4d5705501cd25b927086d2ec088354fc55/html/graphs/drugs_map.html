@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="albers-usa-all.js"></script>
+<link rel="stylesheet" href="../stories/cece-styles.css">
 <style type="text/css">
 a {
     text-decoration: none;
@@ -35,29 +35,11 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
 
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.previous {
-  background-color: #f1f1f1;
-  color: black;
-}
-
-.next {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.round {
-  border-radius: 50%;
+.svg-container {
+	display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* On mouse hover, lighten state color */
@@ -83,22 +65,24 @@ body {
 }
 
 </style>
+<title>Rhodes Transactions Map</title>
 </head>
 
 <body>
-	
+<h1>RhodesTransactions Map</h1>
 <div id="container" class="svg-container"></div>
 <script type="text/javascript">
 
 //Width and height of map
-var width = 1280;
-var height = 650;
+var width = 1000;
+var height = 550;
 
 var numberParse = d3.format(",");
 var formatDecimalComma = d3.format(",.2f");
 
 // D3 Projection
-var projection = albersUsaAll()					// all USA territory
+var projection = d3.geo.albersUsa()
+//albersUsaAll()					// all USA territory
 				   .translate([width/2, height/2])    // translate to center of screen
 				   .scale([1250]);          // scale things down so see entire US
 
@@ -119,7 +103,7 @@ var div = d3.select("body")
     		.style("opacity", 0);
 
 // Load in my states data!
-d3.csv("data/state_drugs_coord_all.csv", function(data) {
+d3.csv("data/states_coordinates.csv", function(data) {
 
 	// Load GeoJSON data and merge with states data
 	d3.json("us-states.json", function(json) {
@@ -229,13 +213,13 @@ d3.csv("data/state_drugs_coord_all.csv", function(data) {
 	  });
 
 		// add title of graphic
-		svg.append("text")
-	        .attr("x", (width / 2))
-	        .attr("y", 35)
-	        .attr("text-anchor", "middle")
-	        .style("font-size", "28px")
-	        .style("text-decoration", "underline")
-	        .text("Rhodes Drug Flow");
+		// svg.append("text")
+	  //       .attr("x", (width / 2))
+	  //       .attr("y", 35)
+	  //       .attr("text-anchor", "middle")
+	  //       .style("font-size", "28px")
+	  //       .style("text-decoration", "underline")
+	  //       .text("Rhodes Drug Flow");
 
 	});
 });
