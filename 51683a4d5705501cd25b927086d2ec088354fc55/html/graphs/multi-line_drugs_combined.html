@@ -4,6 +4,11 @@
       <link rel="stylesheet" href="../stories/cece-styles.css">
       <script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
   <style>
+  img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   a {
       text-decoration: none;
       display: inline-block;
@@ -69,7 +74,7 @@
 </p>
 
 <!-- Mulit-line charts -->
-<h2>Rhodes Drug Types Over Time (Quantity)</h2>
+<h2>Rhodes Drug Types Plotted by Month (Quantity)</h2>
 
 <div id="container" class="svg-container"></div>
 <script>
@@ -304,10 +309,11 @@ var margin = {
     });
 })
 </script>
-
+<br>
+<p>The graphic above shows the total quantity of Rhodes Pharma transactions for each drug ingredient from 2009-2014. For most of the drug ingredients there is a spike around the summer months of each year and then another one at the end of each year. This is particularly relevant to Morphine. There was a noticeable spike in Hydrocodone transactions in the summer of 2011 and a much smaller one at the end of 2014. Oxycodone had a small spike at the end of 2012, a relatively bigger spike during the summer of 2013 and then and enormous spike at the end of 2014, which was also represented the largest quantity of any drug ingredient being sold. Hydromorphone was rather steady, with a one major spike at the end of 2013.</p>
 <!-- Mulit-line charts -->
 
-<h2>Rhodes Drug Types Over Time (MME)</h2>
+<h2>Rhodes Drug Types By Month(MME)</h2>
 
 <div id="container2" class="svg-container2"></div>
 <script>
@@ -543,8 +549,21 @@ var margin = {
     });
 })
 </script>
+<p>This graphic is the same as the one before but we are looking at each drug's total MME (morphine miligram equivalent). The three main drug ingredients that were being sold the most based on MME are Morphine, Oxycodone, and Hydromorphone. This graphic puts the transactions in a different perspective. The biggest spike in the last graph with oxycodone at the end of 2014, but that just meant that it was the largest number of transactions, but each transaction has different amounts of MME.</p>
 
-<br><br><br>
+<h1>Purdue Drug Types</h1>
+<div class="nextPreviousButtons">
+<img src="purduedrugtypes.png" alt="purdue drug transactions" style="width:750px;height:750;"><br>
+</div>
+<p>The graph below shows the trends of the total number of transactions by drug  type from 2006-2014 by Purdue Pharma. The drug types are morphine, hydromorphone, oxycodone, and buprenorphine. Buprenorphine is a drug used for pain relief and to help fight addiction to pain medication. It started being sold in 2010 as Purdue was under fire with lawsuits. There was a significant increase in oxycodone being sold in 2007, the year Purdue pleaded guilty.</p>
+
+<h1>Rhodes Drug Types Per Year</h1>
+<div class="nextPreviousButtons">
+<img src="rhodes_drug_types.png" alt="purdue drug transactions" style="width:750px;height:750;"><br>
+</div>
+<p>The graph below shows the trends of the total number of transactions by drug type from 2006-2014 by Rhodes Tech. It is interesting that there is an increase in Rhodes' sales with morphine, while there was a slight decrease in Purdue sales. There was a similar trend with Hydromorphone sales, as they increased for Rhodes, but had stagnant/slightly decreasing sales for Purdue.</p>
+
+
 <div class="nextPreviousButtons">
   <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/rhodes.html" class="previous round">&laquo; Previous</a>
   <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/graphs/purdue_drug_types_donut.html" class="next round">Purdue Drug Types&raquo;</a>
