@@ -1,0 +1,19 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+p {
+  font-family: serif;
+  font-size: 15px;
+}
+.marginauto {
+    margin: 10px auto 20px;
+    display: block;
+}
