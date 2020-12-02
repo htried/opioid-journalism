@@ -31,4 +31,9 @@ You can find our article mockups at the following links:
 - [Rhodes Pharmaceuticals](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/rhodes.html)
 - [Providence Overdoses](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/ods.html)
 
+### Article Drafts
+You can find our article drafts at the following links:
+- [Injured Workers and Opioids](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/injured_workers_opioids.html)
+
+
 The members of the data science and graphics team are Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee, and Hal Triedman. This project is a part of Brown University's CS for Social Change practicum.

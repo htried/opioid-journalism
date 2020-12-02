@@ -1,5 +1,8 @@
 body {
   background-color: white;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 h1 {
@@ -11,9 +14,13 @@ h5 {
 }
 p {
   font-family: serif;
-  font-size: 15px;
+  font-size: 14px;
 }
-.marginauto {
-    margin: 10px auto 20px;
+div, iframe {
+    margin: 0 auto;
+}
+
+iframe {
     display: block;
+    border-style:none;
 }
