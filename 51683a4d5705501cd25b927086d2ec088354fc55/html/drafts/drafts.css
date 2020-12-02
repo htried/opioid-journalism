@@ -6,15 +6,18 @@ body {
 }
 
 h1 {
+  font-family: georgia;
   text-align: center;
 }
 
 h5 {
+  font-family: georgia;
   text-align: center;
 }
 p {
   font-family: georgia;
   font-size: 14px;
+  line-height: 1.2;
 }
 div, iframe {
     margin: 0 auto;
