@@ -1,11 +1,12 @@
 body {
   background-color: white;
   margin-bottom: 100px;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 h1 {
+  font-family: georgia;
   text-align: center;
 }
 
@@ -14,11 +15,13 @@ h3 {
 }
 
 h5 {
+  font-family: georgia;
   text-align: center;
 }
 p {
-  font-family: serif;
+  font-family: georgia;
   font-size: 14px;
+  line-height: 1.2;
 }
 div, iframe {
     margin: 0 auto;
