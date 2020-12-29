@@ -31,3 +31,7 @@ iframe {
     display: block;
     border-style:none;
 }
+
+#pagebreak {
+    text-align: center;
+}
