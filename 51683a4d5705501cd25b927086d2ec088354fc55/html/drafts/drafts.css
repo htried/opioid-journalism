@@ -13,7 +13,7 @@ h1 {
 h2 {
   font-family: georgia;
   text-align: center;
-  color: #b8b8b8;
+  color: #8a8a8a;
   font-style: italic;
   font-size: 24px;
   font-weight: lighter;
@@ -24,12 +24,14 @@ h3 {
   text-align: right;
   font-size: 20px;
   font-weight: lighter;
+  font-style: italic;
 }
 
 h5 {
   font-family: georgia;
   text-align: center;
   font-weight: lighter;
+  font-style: italic;
 }
 
 p {
