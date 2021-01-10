@@ -13,16 +13,23 @@ h1 {
 h2 {
   font-family: georgia;
   text-align: center;
+  color: #b8b8b8;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: lighter;
 }
 
 h3 {
   font-family: georgia;
-  text-align: center;
+  text-align: right;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 h5 {
   font-family: georgia;
   text-align: center;
+  font-weight: lighter;
 }
 
 p {
@@ -35,7 +42,7 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
 }
 
 div, iframe {
