@@ -1,39 +1,62 @@
 # Welcome the Rhode Island Opioid Data Journalism Project
 
-Hi there! We're a multidisciplinary group of data scientists and journalists from Brown University, working together to investigate the opioid crisis in Rhode Island through a rich variety of data sources. With the expertise and technical know-how of data scientists, we hope to dig into daunting datasets to create evocative and informative graphics on the opioid crisis. Journalists will then take these findings and contextualize them with human stories. We hope to continue working on these stories through the summer, with the intention of pitching and publishing them in fall 2020.
+We are a multidisciplinary group of journalists and data scientists from Brown University, led by Pulitzer Prize-winning journalist Tracy Breton. Over the past year, we have worked together to investigate the opioid epidemic in Rhode Island and tell critical stories about a decades-long national crisis, producing dozens of stories along the way. Journalists have found compelling stories about opioids in RI, ranging from human interest to data-driven investigation. At the same time, we've utilized the expertise and technical know-how of data scientists to dig into daunting datasets and create evocative and informative graphics. We hope these pieces will be published in early 2021.
 
-### Datasets
-We've looked at many different data sources to get a deep understanding of the opioid crisis in Rhode Island:
-- ARCOS
+## Articles
+We've broken up our project into multiple sections as follows:
+
+### How Rhode Island's Criminal Justice System Has Responded to the Opioid Epidemic 
+- [Adult Drug Court: Rhode Island’s Judiciary Takes a Public Health Approach to the Opioid Crisis](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/adult_drug_court.html) — Ivy Scott
+- [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_diversion.html) (sidebar to Adult Drug Court story) — Ivy Scott
+- [Kristen's Law (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/kristens_law.html) — Marina Hunt
+
+### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years (tk)
+
+### Pharmacies and Addiction (more tk)
+- [Injured Workers and Opioids](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/injured_workers_opioids.html)
+
+### Rhodes Pharmaceuticals — Rhode Island's Opioid Manufacturing Base
+- [For nearly a decade, two RI opioid manufacturers made billions of opioid doses](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/rhodes.html) — Hal Triedman
+
+### Doctors and the Opioid Epidemic (more tk)
+- [Bad Docs (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/bad_docs.html) — Li Goldstein
+- [The Opioid Influencers](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_influencers.html) — Hal Triedman
+
+### The Human Toll (more tk)
+- ["Recovery is Possible": One woman’s fight to save her own life and, now, the life of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html)
+- [Not Just a White Problem: Minorities Are Dying of Opioid Overdoses. Rhode Island is Fighting to Stop It.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/not_just_a_white_problem.html) — Gaya Gupta and Ivy Scott
+- [Stigma and Addiction (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_stigma.html) — Lucas Fried and Nell Salzman
+- [Portraits of Grief: Alex F. Minteer](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_minteer.html) — Lucas Fried
+- [Portraits of Grief: Alexander Charles Perry](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_perry.html) — Colleen Cronin
+- [Portraits of Grief: William L. Huntley](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_bill_huntley.html) — Ivy Scott
+- [Portraits of Grief: Jason Broomfield](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jason_broomfield.html) — Lucas Fried
+- [Portraits of Grief: Jason Ferri](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jason_ferri.html) — Olivia George
+- [Portraits of Grief: Jason Lother](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jason_lother.html) — Olivia George
+- [Portraits of Grief: Jessica Ahearn](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jessica_ahearn.html) — Olivia George
+- [Portraits of Grief: James L. Angell III](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jim_angell.html) — Lucas Fried
+- [Portraits of Grief: Kasia M. Jurczyk](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_kasia_jurczyk.html) — Maia Rosenfeld
+- [Portraits of Grief: Peter Michael Angelone](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_peter_angelone.html) — Colleen Cronin
+
+### Attacking the Problem (more tk)
+- [VA hospital tries to help addicted vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
+
+## Datasets
+We've looked at a rich variety of data sources to get a deep understanding of the opioid crisis in Rhode Island:
+- ARCOS drug data (contact [Hal Triedman](mailto:htriedman@gmail.com) for access to this dataset through Google Cloud) 
 - Census data
 - Publicly available state data on overdose deaths, emergency room visits, and naloxone use and distribution
 - Detailied overdose records for the city of Providence
-- Publicly available doctor payment data
-- Digitized court records since 1980
+- Publicly available doctor payment data from the Center for Medicare/Medicaid Services
+- Digitized state court records from 1980 - 2019
 - Lawsuits against opioid manufacturers like Rhodes Pharmaceuticals and Purdue Pharma
-- (to come) Medicaid prescription utilization
+- Bankruptcy documents
 
-### Tools
+## Tools
 We're using several different tools to store, process, and visualize data:
-- Google Drive (for shared data storage)
-- Google Colab (for shared data processing scripts)
-- Pandas (for data manipulation and filtering)
-- d3.js (for mapping and visualizations)
-- Tableau (for mapping and visualizations)
-- Github Pages (for mocking up what articles will eventually look like and putting images/graphics with text)
+- Google Cloud Platform
+- BigQuery
+- Google Datastudio
+- Google Colab
+- Github Pages (for mocking up articles)
 
-### Article Mockups
-You can find our article mockups at the following links:
-- [Court Data investigation](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/courtdata.html)
-- [Dollars for Docs](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/dollars4docs.html)
-- [Injured Workers' Pharmacy/Mail-Order Pharmacies](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/iwp.html)
-- [ARCOS/Pharmacies](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/pharmacies.html)
-- [Rhodes Pharmaceuticals](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/rhodes.html)
-- [Providence Overdoses](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/stories/ods.html)
-
-### Article Drafts
-You can find our article drafts at the following links:
-- [Injured Workers and Opioids](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/injured_workers_opioids.html)
-
-
-The members of the data science and graphics team are Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee, and Hal Triedman. This project is a part of Brown University's CS for Social Change practicum.
+The members of the data science and graphics team are Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee, Jane Yang, and Hal Triedman. This project started as a part of Brown University's CS for Social Change practicum.
