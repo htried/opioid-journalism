@@ -5,7 +5,7 @@ We are a multidisciplinary group of journalists and data scientists from Brown U
 ## Articles
 We've broken up our project into multiple sections as follows:
 
-### How Rhode Island's Criminal Justice System Has Responded to the Opioid Epidemic 
+### How Rhode Island's Criminal Justice System Has Responded to the Opioid Epidemic (more tk)
 - [Adult Drug Court: Rhode Island’s Judiciary Takes a Public Health Approach to the Opioid Crisis](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/adult_drug_court.html) — Ivy Scott
 - [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_diversion.html) (sidebar to Adult Drug Court story) — Ivy Scott
 - [Kristen's Law (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/kristens_law.html) — Marina Hunt
@@ -40,6 +40,19 @@ We've broken up our project into multiple sections as follows:
 ### Attacking the Problem (more tk)
 - [VA hospital tries to help addicted vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
 
+## Authors (more tk)
+<img src="html/drafts/img/hal_triedman.jpg" width="300">
+Hal Triedman is a December 2020 graduate of Brown University, with degrees in Computer Science and History. This project was his first experience with data journalism and computer-aided reporting, and he hopes to pursue the intersection of CS and journalism further as he starts his career.
+<br>
+
+<img src="html/drafts/img/olivia_george.jpg" width="300">
+Olivia George is a junior at Brown University studying History and plans to pursue a career in investigative journalism. She has written for the Providence Journal and Teen Vogue, and this summer she will intern at The Virginian-Pilot.
+<br>
+
+<img src="html/drafts/img/colleen_cronin.jpg" width="300">
+Colleen Cronin is a senior at Brown concentrating in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and hopes to pursue journalism after she graduates.
+<br>
+
 ## Datasets
 We've looked at a rich variety of data sources to get a deep understanding of the opioid crisis in Rhode Island:
 - ARCOS drug data (contact [Hal Triedman](mailto:htriedman@gmail.com) for access to this dataset through Google Cloud) 
@@ -59,4 +72,8 @@ We're using several different tools to store, process, and visualize data:
 - Google Colab
 - Github Pages (for mocking up articles)
 
+## Methodology (tk)
+
 The members of the data science and graphics team are Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee, Jane Yang, and Hal Triedman. This project started as a part of Brown University's CS for Social Change practicum.
+
+Hal Triedman (github: [htried](https://github.com/htried)) coded this site and led the CS for Social Change team.
