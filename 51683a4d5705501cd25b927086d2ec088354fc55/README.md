@@ -41,17 +41,17 @@ We've broken up our project into multiple sections as follows:
 - [VA hospital tries to help addicted vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
 
 ## Authors (more tk)
-<img src="html/drafts/img/hal_triedman.jpg" width="300">
+<img src="html/drafts/img/hal_triedman.jpg" width="300"><br>
 Hal Triedman is a December 2020 graduate of Brown University, with degrees in Computer Science and History. This project was his first experience with data journalism and computer-aided reporting, and he hopes to pursue the intersection of CS and journalism further as he starts his career.
-<br>
+<br><br>
 
-<img src="html/drafts/img/olivia_george.jpg" width="300">
+<img src="html/drafts/img/olivia_george.jpg" width="300"><br>
 Olivia George is a junior at Brown University studying History and plans to pursue a career in investigative journalism. She has written for the Providence Journal and Teen Vogue, and this summer she will intern at The Virginian-Pilot.
-<br>
+<br><br>
 
-<img src="html/drafts/img/colleen_cronin.jpg" width="300">
+<img src="html/drafts/img/colleen_cronin.jpg" width="300"><br>
 Colleen Cronin is a senior at Brown concentrating in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and hopes to pursue journalism after she graduates.
-<br>
+<br><br>
 
 ## Datasets
 We've looked at a rich variety of data sources to get a deep understanding of the opioid crisis in Rhode Island:
