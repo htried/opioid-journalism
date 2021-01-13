@@ -19,13 +19,15 @@ We've broken up our project into multiple sections as follows:
 - [For nearly a decade, two RI opioid manufacturers made billions of opioid doses](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/rhodes.html) — Hal Triedman
 
 ### Doctors and the Opioid Epidemic (more tk)
-- [Bad Docs (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/bad_docs.html) — Li Goldstein
+- [Policing Doctors](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/bad_docs.html) — Li Goldstein
 - [The Opioid Influencers](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_influencers.html) — Hal Triedman
+- [A Doctor's Downfall](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/huntington.html) — Li Goldstein
 
 ### The Human Toll (more tk)
-- ["Recovery is Possible": One woman’s fight to save her own life and, now, the life of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html)
-- [Not Just a White Problem: Minorities Are Dying of Opioid Overdoses. Rhode Island is Fighting to Stop It.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/not_just_a_white_problem.html) — Gaya Gupta and Ivy Scott
-- [Stigma and Addiction (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_stigma.html) — Lucas Fried and Nell Salzman
+- ["Recovery is Possible": One woman’s fight to save her own life and, now, the lives of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html)
+- [Not Just a White Problem: Minorities Are Dying of Opioid Overdoses. Rhode Island is Fighting to Stop It](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/not_just_a_white_problem.html) — Gaya Gupta and Ivy Scott
+- [Stigma and Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_stigma.html) — Lucas Fried and Nell Salzman
+- [She Lost Both Parents To Opioids But Is Thriving Under Her Grandparents' Care](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/jurczyk_grandparents.html) — Maia Rosenfeld
 - [Portraits of Grief: Alex F. Minteer](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_minteer.html) — Lucas Fried
 - [Portraits of Grief: Alexander Charles Perry](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_perry.html) — Colleen Cronin
 - [Portraits of Grief: William L. Huntley](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_bill_huntley.html) — Ivy Scott
@@ -39,6 +41,7 @@ We've broken up our project into multiple sections as follows:
 
 ### Attacking the Problem (more tk)
 - [VA hospital tries to help addicted vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
+- [RI Workers' Compensation System Takes On The Opioid Epidemic](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/workers_comp.html) — Maia Rosenfeld
 
 ## Authors (more tk)
 <img src="html/drafts/img/hal_triedman.jpg" width="300"><br>
