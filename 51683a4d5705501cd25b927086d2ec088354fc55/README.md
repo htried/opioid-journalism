@@ -6,6 +6,7 @@ We are a multidisciplinary group of journalists and data scientists from Brown U
 We've broken up our project into multiple sections as follows:
 
 ### How Rhode Island's Criminal Justice System Has Responded to the Opioid Epidemic (more tk)
+- [An inside look at 30 years of narcotics prosecutions in Rhode Island](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/court_data.html) — Lena Renshaw, Colleen Cronin, Gaya Gupta and Marina Hunt
 - [Adult Drug Court: Rhode Island’s Judiciary Takes a Public Health Approach to the Opioid Crisis](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/adult_drug_court.html) — Ivy Scott
 - [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_diversion.html) (sidebar to Adult Drug Court story) — Ivy Scott
 - [Kristen's Law (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/kristens_law.html) — Marina Hunt
@@ -27,6 +28,7 @@ We've broken up our project into multiple sections as follows:
 - ["Recovery is Possible": One woman’s fight to save her own life and, now, the lives of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html)
 - [Not Just a White Problem: Minorities Are Dying of Opioid Overdoses. Rhode Island is Fighting to Stop It](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/not_just_a_white_problem.html) — Gaya Gupta and Ivy Scott
 - [Stigma and Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_stigma.html) — Lucas Fried and Nell Salzman
+- [Grandparents Raising Children of Those Lost to Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/grandparents.html) — Olivia George
 - [She Lost Both Parents To Opioids But Is Thriving Under Her Grandparents' Care](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/jurczyk_grandparents.html) — Maia Rosenfeld
 - [Portraits of Grief: Alex F. Minteer](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_minteer.html) — Lucas Fried
 - [Portraits of Grief: Alexander Charles Perry](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_perry.html) — Colleen Cronin
