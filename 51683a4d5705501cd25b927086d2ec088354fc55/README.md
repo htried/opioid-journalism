@@ -77,6 +77,7 @@ We're using several different tools to store, process, and visualize data:
 - Google Datastudio
 - Google Colab
 - Github Pages (for mocking up articles)
+- d3.js
 
 ## Methodology (tk)
 
