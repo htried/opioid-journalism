@@ -40,6 +40,7 @@ We've broken up our project into multiple sections as follows:
 - [Portraits of Grief: Peter Michael Angelone](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_peter_angelone.html) — Colleen Cronin
 
 ### Attacking the Problem (more tk)
+- [The Future of Overdose Prevention: Getting Naloxone into the Hands of Rhode Islanders Everywhere](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/naloxone.html) — Ivy Scott
 - [VA hospital tries to help addicted vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
 - [RI Workers' Compensation System Takes On The Opioid Epidemic](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/workers_comp.html) — Maia Rosenfeld
 
@@ -55,6 +56,8 @@ Olivia George is a junior at Brown University studying History and plans to purs
 <img src="html/drafts/img/colleen_cronin.jpg" width="300"><br>
 Colleen Cronin is a senior at Brown concentrating in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and hopes to pursue journalism after she graduates.
 <br><br>
+
+Jane Yang is a junior at Brown University concentrating in Applied Math- Computer Science and appreciates the work of fellow student journalists.<br><br>
 
 ## Datasets
 We've looked at a rich variety of data sources to get a deep understanding of the opioid crisis in Rhode Island:
@@ -74,9 +77,10 @@ We're using several different tools to store, process, and visualize data:
 - Google Datastudio
 - Google Colab
 - Github Pages (for mocking up articles)
+- d3.js
 
 ## Methodology (tk)
 
 The members of the data science and graphics team are Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee, Jane Yang, and Hal Triedman. This project started as a part of Brown University's CS for Social Change practicum.
 
-Hal Triedman (github: [htried](https://github.com/htried)) coded this site and led the CS for Social Change team.
+Hal Triedman (github: [htried](https://github.com/htried)), Gaby Rizk, and Jane Yang coded this site, and Hal Triedman led the CS for Social Change team.
