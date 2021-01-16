@@ -61,6 +61,10 @@ Colleen Cronin is a senior at Brown concentrating in English on the non-fiction 
 
 Jane Yang is a junior at Brown University concentrating in Applied Math- Computer Science and appreciates the work of fellow student journalists.<br><br>
 
+<img src="html/drafts/img/tracy_breton.jpg" width="300"><br>
+Tracy Breton was an investigative and legal affairs reporter for The Providence Journal for 40 years and in 1994, was part of a team of reporters that won a Pulitzer Prize for a series of stories uncovering corruption in Rhode Island’s court system. She has been teaching journalism classes in the Nonfiction Writing Program of Brown University’s Department of English since 1997. Students she has taught at Brown now work at some of the nation’s most prestigious news media outlets. She is passionate about finding and reporting untold stories and training the next generation of journalists to do the job right. This year-long project was her brainchild and the first at Brown to formally integrate computer-assisted reporting from data science students with reporting by journalism students.
+<br><br>
+
 ## Datasets
 We've looked at a rich variety of data sources to get a deep understanding of the opioid crisis in Rhode Island:
 - ARCOS drug data (contact [Hal Triedman](mailto:htriedman@gmail.com) for access to this dataset through Google Cloud) 
