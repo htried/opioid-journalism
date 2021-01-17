@@ -11,7 +11,8 @@ We've broken up our project into multiple sections as follows:
 - [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_diversion.html) (sidebar to Adult Drug Court story) — Ivy Scott
 - [Kristen's Law (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/kristens_law.html) — Marina Hunt
 
-### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years (tk)
+### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years
+- [Three years of fatal overdoses in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/providence_overdoses.html) — Olivia George, Marina Hunt, and Colleen Cronin
 
 ### Pharmacies and Addiction (more tk)
 - [Injured Workers and Opioids](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/injured_workers_opioids.html)
@@ -39,6 +40,7 @@ We've broken up our project into multiple sections as follows:
 - [Portraits of Grief: Jessica Ahearn](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jessica_ahearn.html) — Olivia George
 - [Portraits of Grief: James L. Angell III](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jim_angell.html) — Lucas Fried
 - [Portraits of Grief: Kasia M. Jurczyk](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_kasia_jurczyk.html) — Maia Rosenfeld
+- [Portraits of Grief: Kemah Tolston](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_kemah_tolston.html) — Colleen Cronin
 - [Portraits of Grief: Peter Michael Angelone](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_peter_angelone.html) — Colleen Cronin
 
 ### Attacking the Problem (more tk)
