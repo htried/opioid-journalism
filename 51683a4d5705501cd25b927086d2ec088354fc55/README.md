@@ -26,7 +26,8 @@ We've broken up our project into multiple sections as follows:
 - [A Doctor's Downfall](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/huntington.html) — Li Goldstein
 
 ### The Human Toll (more tk)
-- ["Recovery is Possible": One woman’s fight to save her own life and, now, the lives of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html)
+- [He Could Not Be Saved](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/livingstone.html) — Lucas Fried
+- ["Recovery is Possible": One woman’s fight to save her own life and, now, the lives of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html) — Olivia George
 - [Not Just a White Problem: Minorities Are Dying of Opioid Overdoses. Rhode Island is Fighting to Stop It](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/not_just_a_white_problem.html) — Gaya Gupta and Ivy Scott
 - [Stigma and Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_stigma.html) — Lucas Fried and Nell Salzman
 - [Grandparents Raising Children of Those Lost to Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/grandparents.html) — Olivia George
@@ -59,6 +60,22 @@ Olivia George is a junior at Brown University studying History and plans to purs
 
 <img src="html/drafts/img/colleen_cronin.jpg" width="300"><br>
 Colleen Cronin is a senior at Brown concentrating in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and hopes to pursue journalism after she graduates.
+<br><br>
+
+<img src="html/drafts/img/greer_brigham.jpg" width="300"><br>
+Greer Brigham is a recent graduate from Brown University where he studied political science and economics. The service of his father, Lt. Henry D. Brigham III, USS Fahrion (FFG-22), inspired Greer to cover the opioid epidemic's effects on veterans. Greer is currently using his background in politics, economics, and journalism to investigate issues related to income inequality. 
+<br><br>
+
+<img src="html/drafts/img/li_goldstein.jpg" width="300"><br>
+Li Goldstein is a junior at Brown University concentrating in English, Nonfiction Writing. She currently works as a managing editor at The Brown Daily Herald, and hopes to pursue a career in journalism after graduation.
+<br><br>
+
+<img src="html/drafts/img/maia_rosenfeld.jpg" width="300"><br>
+Maia Rosenfeld is a Data Reporter and Scripps Howard Fellow at the Scripps Washington Bureau. She graduated from Brown in 2020, where she concentrated in Literary Arts and served as Metro News Editor for The Brown Daily Herald.
+<br><br>
+
+<img src="html/drafts/img/gaya_gupta.jpg" width="300"><br>
+Gaya Gupta is a sophomore at Brown concentrating in computer science and English. She writes for The College Hill Independent and hopes to pursue a career melding reporting and data science as a member of an investigative reporting team. 
 <br><br>
 
 Jane Yang is a junior at Brown University concentrating in Applied Math- Computer Science and appreciates the work of fellow student journalists.<br><br>
