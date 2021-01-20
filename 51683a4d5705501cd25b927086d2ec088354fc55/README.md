@@ -66,11 +66,11 @@ Colleen Cronin is a senior at Brown concentrating in English on the non-fiction 
 Greer Brigham is a recent graduate from Brown University where he studied political science and economics. The service of his father, Lt. Henry D. Brigham III, USS Fahrion (FFG-22), inspired Greer to cover the opioid epidemic's effects on veterans. Greer is currently using his background in politics, economics, and journalism to investigate issues related to income inequality. 
 <br><br>
 
-<img src="html/drafts/img/li_goldstein.jpg" width="300"><br>
+<img src="html/drafts/img/li_goldstein.jpeg" width="300"><br>
 Li Goldstein is a junior at Brown University concentrating in English, Nonfiction Writing. She currently works as a managing editor at The Brown Daily Herald, and hopes to pursue a career in journalism after graduation.
 <br><br>
 
-<img src="html/drafts/img/maia_rosenfeld.jpg" width="300"><br>
+<img src="html/drafts/img/maia_rosenfeld.jpeg" width="300"><br>
 Maia Rosenfeld is a Data Reporter and Scripps Howard Fellow at the Scripps Washington Bureau. She graduated from Brown in 2020, where she concentrated in Literary Arts and served as Metro News Editor for The Brown Daily Herald.
 <br><br>
 
@@ -79,7 +79,7 @@ Gaya Gupta is a sophomore at Brown concentrating in computer science and English
 <br><br>
 
 <img src="html/drafts/img/lucas_fried.jpg" width="300"><br>
-Lucas Fried is a senior at Brown studying public policy and economics. He loves writing about people and politics and aims to use his words for political advocacy after graduation.<br><br>
+Lucas Fried is a senior at Brown studying public policy and economics. He loves writing about people and politics and aims to use words for political advocacy after graduation.<br><br>
 
 Jane Yang is a junior at Brown University concentrating in Applied Math- Computer Science and appreciates the work of fellow student journalists.<br><br>
 
