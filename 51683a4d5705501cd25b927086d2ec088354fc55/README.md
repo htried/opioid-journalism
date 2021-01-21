@@ -26,7 +26,7 @@ We've broken up our project into multiple sections as follows:
 - [A Doctor's Downfall](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/huntington.html) — Li Goldstein
 
 ### The Human Toll (more tk)
-- [He Could Not Be Saved](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/livingstone.html) — Lucas Fried
+- [He Could Not Be Saved](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/livingstone.html) — Max Kozlov
 - ["Recovery is Possible": One woman’s fight to save her own life and, now, the lives of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html) — Olivia George
 - [Not Just a White Problem: Minorities Are Dying of Opioid Overdoses. Rhode Island is Fighting to Stop It](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/not_just_a_white_problem.html) — Gaya Gupta and Ivy Scott
 - [Stigma and Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_stigma.html) — Lucas Fried and Nell Salzman
