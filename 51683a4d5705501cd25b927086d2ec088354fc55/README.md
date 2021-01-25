@@ -10,6 +10,7 @@ We've broken up our project into multiple sections as follows:
 - [Adult Drug Court: Rhode Island’s Judiciary Takes a Public Health Approach to the Opioid Crisis](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/adult_drug_court.html) — Ivy Scott
 - [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_diversion.html) (sidebar to Adult Drug Court story) — Ivy Scott
 - [Kristen's Law (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/kristens_law.html) — Marina Hunt
+- [Policing drug crimes in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/week_in_policing.html) — Marina Hunt
 
 ### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years
 - [Three years of fatal overdoses in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/providence_overdoses.html) — Olivia George, Marina Hunt, and Colleen Cronin
