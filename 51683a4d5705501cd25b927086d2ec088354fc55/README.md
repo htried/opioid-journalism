@@ -15,7 +15,8 @@ We've broken up our project into multiple sections as follows:
 ### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years
 - [Three years of fatal overdoses in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/providence_overdoses.html) — Olivia George, Marina Hunt, and Colleen Cronin
 
-### Pharmacies and Addiction (more tk)
+### Pharmacies and Addiction
+- [Nine years, 329 million pills](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/pills_pharmacies.html) — Olivia George and Hal Triedman
 - [Injured Workers and Opioids](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/injured_workers_opioids.html) — Maia Rosenfeld
 
 ### Rhodes Pharmaceuticals — Rhode Island's Opioid Manufacturing Base
