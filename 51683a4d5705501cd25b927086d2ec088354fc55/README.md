@@ -87,7 +87,10 @@ Gaya Gupta is a sophomore at Brown concentrating in computer science and English
 <img src="html/drafts/img/lucas_fried.jpg" width="300"><br>
 Lucas Fried is a senior at Brown studying public policy and economics. He loves writing about people and politics and aims to use his words to work on issues of civic engagement after graduation.<br><br>
 
-Jane Yang is a junior at Brown University concentrating in Applied Math- Computer Science and appreciates the work of fellow student journalists.<br><br>
+Jane Yang is a junior at Brown University concentrating in Applied Math-Computer Science and appreciates the work of fellow student journalists.<br><br>
+
+<img src="html/drafts/img/gaby_rizk.jpg" width="300"><br>
+Gabriel Rizk is a senior at Brown studying computer science. He will be working as a software engineer at Amazon after graduation.<br><br>
 
 <img src="html/drafts/img/tracy_breton.jpg" width="300"><br>
 Tracy Breton was an investigative and legal affairs reporter for The Providence Journal for 40 years and in 1994, was part of a team of reporters that won a Pulitzer Prize for a series of stories uncovering corruption in Rhode Island’s court system. She has been teaching journalism classes in the Nonfiction Writing Program of Brown University’s Department of English since 1997. Students she has taught at Brown now work at some of the nation’s most prestigious news media outlets. She is passionate about finding and reporting untold stories and training the next generation of journalists to do the job right. This year-long project was her brainchild and the first at Brown to formally integrate computer-assisted reporting from data science students with reporting by journalism students.
