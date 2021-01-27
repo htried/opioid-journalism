@@ -6,21 +6,21 @@ We are a multidisciplinary group of journalists and data scientists from Brown U
 We've broken up our project into multiple sections as follows:
 
 ### How Rhode Island's Criminal Justice System Has Responded to the Opioid Epidemic (more tk)
-- [An inside look at 30 years of narcotics prosecutions in Rhode Island](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/court_data.html) — Lena Renshaw, Colleen Cronin, Gaya Gupta and Marina Hunt
+- [An Inside Look at 30 years of Narcotics Prosecutions in Rhode Island](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/court_data.html) — Lena Renshaw, Colleen Cronin, Gaya Gupta and Marina Hunt
 - [Adult Drug Court: Rhode Island’s Judiciary Takes a Public Health Approach to the Opioid Crisis](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/adult_drug_court.html) — Ivy Scott
 - [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_diversion.html) (sidebar to Adult Drug Court story) — Ivy Scott
-- [Kristen's Law (placeholder title)](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/kristens_law.html) — Marina Hunt
-- [Policing drug crimes in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/week_in_policing.html) — Marina Hunt
+- [Kristen's Law](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/kristens_law.html) — Marina Hunt
+- [Policing Drug Crimes in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/week_in_policing.html) — Marina Hunt
 
 ### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years
-- [Three years of fatal overdoses in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/providence_overdoses.html) — Olivia George, Marina Hunt, and Colleen Cronin
+- [Three Years of Fatal Overdoses in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/providence_overdoses.html) — Olivia George, Marina Hunt, and Colleen Cronin
 
 ### Pharmacies and Addiction
 - [Nine years, 329 million pills](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/pills_pharmacies.html) — Olivia George and Hal Triedman
 - [Injured Workers and Opioids](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/injured_workers_opioids.html) — Maia Rosenfeld
 
 ### Rhodes Pharmaceuticals — Rhode Island's Opioid Manufacturing Base
-- [For nearly a decade, two RI opioid manufacturers made billions of opioid doses](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/rhodes.html) — Hal Triedman
+- [For Nearly a Decade, Two RI Opioid Manufacturers Made Billions of Opioid Doses](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/rhodes.html) — Hal Triedman
 
 ### Doctors and the Opioid Epidemic (more tk)
 - [Policing Doctors](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/bad_docs.html) — Li Goldstein
@@ -34,21 +34,24 @@ We've broken up our project into multiple sections as follows:
 - [Stigma and Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_stigma.html) — Lucas Fried and Nell Salzman
 - [Grandparents Raising Children of Those Lost to Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/grandparents.html) — Olivia George
 - [She Lost Both Parents To Opioids But Is Thriving Under Her Grandparents' Care](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/jurczyk_grandparents.html) — Maia Rosenfeld
-- [Portraits of Grief: Alex F. Minteer](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_minteer.html) — Lucas Fried
-- [Portraits of Grief: Alexander Charles Perry](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_perry.html) — Colleen Cronin
-- [Portraits of Grief: William L. Huntley](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_bill_huntley.html) — Ivy Scott
-- [Portraits of Grief: Jason Broomfield](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jason_broomfield.html) — Lucas Fried
-- [Portraits of Grief: Jason Ferri](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jason_ferri.html) — Olivia George
-- [Portraits of Grief: Jason Lother](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jason_lother.html) — Olivia George
-- [Portraits of Grief: Jessica Ahearn](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jessica_ahearn.html) — Olivia George
-- [Portraits of Grief: James L. Angell III](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jim_angell.html) — Lucas Fried
-- [Portraits of Grief: Kasia M. Jurczyk](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_kasia_jurczyk.html) — Maia Rosenfeld
-- [Portraits of Grief: Kemah Tolston](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_kemah_tolston.html) — Colleen Cronin
-- [Portraits of Grief: Peter Michael Angelone](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_peter_angelone.html) — Colleen Cronin
+
+### Lives Lost Too Soon — 11 Portraits of Grief
+- [Alex F. Minteer](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_minteer.html) — Lucas Fried
+- [Alexander Charles Perry](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_alex_perry.html) — Colleen Cronin
+- [William L. Huntley](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_bill_huntley.html) — Ivy Scott
+- [Jason Broomfield](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jason_broomfield.html) — Lucas Fried
+- [Jason Ferri](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jason_ferri.html) — Olivia George
+- [Jason Lother](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jason_lother.html) — Olivia George
+- [Jessica Ahearn](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jessica_ahearn.html) — Olivia George
+- [James L. Angell III](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_jim_angell.html) — Lucas Fried
+- [Kasia M. Jurczyk](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_kasia_jurczyk.html) — Maia Rosenfeld
+- [Kemah Tolston](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_kemah_tolston.html) — Colleen Cronin
+- [Peter Michael Angelone](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_peter_angelone.html) — Colleen Cronin
 
 ### Attacking the Problem (more tk)
 - [The Future of Overdose Prevention: Getting Naloxone into the Hands of Rhode Islanders Everywhere](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/naloxone.html) — Ivy Scott
-- [VA hospital tries to help addicted vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
+- [In an Effort to Stop One Opioid Epidemic, the VA Started Another](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/va_osi.html) — Greer Brigham
+- [VA Hospital Tries to Help Addicted Vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
 - [RI Workers' Compensation System Takes On The Opioid Epidemic](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/workers_comp.html) — Maia Rosenfeld
 
 ## Authors (more tk)
@@ -92,13 +95,16 @@ Tracy Breton was an investigative and legal affairs reporter for The Providence 
 ## Datasets
 We've looked at a rich variety of data sources to get a deep understanding of the opioid crisis in Rhode Island:
 - ARCOS drug data (contact [Hal Triedman](mailto:htriedman@gmail.com) for access to this dataset through Google Cloud) 
-- Census data
-- Publicly available state data on overdose deaths, emergency room visits, and naloxone use and distribution
-- Detailied overdose records for the city of Providence
+- US Census data
+- Publicly available Rhode Island Department of Health data on overdose deaths, emergency room visits, and naloxone use and distribution
+- Detailed overdose records for the City of Providence
 - Publicly available doctor payment data from the Center for Medicare/Medicaid Services
-- Digitized state court records from 1980 - 2019
-- Lawsuits against opioid manufacturers like Rhodes Pharmaceuticals and Purdue Pharma
-- Bankruptcy documents
+- Digitized Rhode Island Judiciary records from 1980 - 2019
+- Lawsuits against opioid manufacturers, distributors and pharmacies filed in Rhode Island and elsewhere
+- US bankruptcy court documents
+- Rhode Island Board of Medical Licensure and Discipline records
+- Massachusetts Board of Registration in Medicine records
+- Police reports from Providence, RI; Newport, RI; Fall River, MA; Cohasset, MA; and elsewhere
 
 ## Tools
 We're using several different tools to store, process, and visualize data:
@@ -108,8 +114,6 @@ We're using several different tools to store, process, and visualize data:
 - Google Colab
 - Github Pages (for mocking up articles)
 - d3.js
-
-## Methodology (tk)
 
 The members of the data science and graphics team are Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee, Jane Yang, and Hal Triedman. This project started as a part of Brown University's CS for Social Change practicum.
 
