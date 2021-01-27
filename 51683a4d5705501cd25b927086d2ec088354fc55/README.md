@@ -89,7 +89,7 @@ Lucas Fried is a senior at Brown studying public policy and economics. He loves 
 
 Jane Yang is a junior at Brown University concentrating in Applied Math-Computer Science and appreciates the work of fellow student journalists.<br><br>
 
-<img src="html/drafts/img/gaby_rizk.jpg" width="300"><br>
+<img src="html/drafts/img/gaby_rizk.jpeg" width="300"><br>
 Gabriel Rizk is a senior at Brown studying computer science. He will be working as a software engineer at Amazon after graduation.<br><br>
 
 <img src="html/drafts/img/tracy_breton.jpg" width="300"><br>
