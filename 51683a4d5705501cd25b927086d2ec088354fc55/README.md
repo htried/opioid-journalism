@@ -92,6 +92,9 @@ Jane Yang is a junior at Brown University concentrating in Applied Math-Computer
 <img src="html/drafts/img/gaby_rizk.jpeg" width="300"><br>
 Gabriel Rizk is a senior at Brown studying computer science. He will be working as a software engineer at Amazon after graduation.<br><br>
 
+<img src="html/drafts/img/lena_renshaw.jpg" width="300"><br>
+Lena Renshaw graduated from Brown University in 2020 with a degree in computer science. She currently works at a healthcare technology company in New York City and is passionate about using technology to create meaningful social change.<br><br>
+
 <img src="html/drafts/img/tracy_breton.jpg" width="300"><br>
 Tracy Breton was an investigative and legal affairs reporter for The Providence Journal for 40 years and in 1994, was part of a team of reporters that won a Pulitzer Prize for a series of stories uncovering corruption in Rhode Island’s court system. She has been teaching journalism classes in the Nonfiction Writing Program of Brown University’s Department of English since 1997. Students she has taught at Brown now work at some of the nation’s most prestigious news media outlets. She is passionate about finding and reporting untold stories and training the next generation of journalists to do the job right. This year-long project was her brainchild and the first at Brown to formally integrate computer-assisted reporting from data science students with reporting by journalism students.
 <br><br>
