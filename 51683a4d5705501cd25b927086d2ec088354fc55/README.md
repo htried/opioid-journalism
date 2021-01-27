@@ -52,7 +52,7 @@ We've broken up our project into multiple sections as follows:
 ### Attacking the Problem
 - [The Future of Overdose Prevention: Getting Naloxone into the Hands of Rhode Islanders Everywhere](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/naloxone.html) — Ivy Scott
 - [In an Effort to Stop One Opioid Epidemic, the VA Started Another](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/va_osi.html) — Greer Brigham
-- [VA Hospital Tries to Help Addicted Vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
+- [Rhode Island VA Hospital Tries to Help Addicted Vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
 - [RI Workers' Compensation System Takes On The Opioid Epidemic](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/workers_comp.html) — Maia Rosenfeld
 
 ## Authors (more tk)
