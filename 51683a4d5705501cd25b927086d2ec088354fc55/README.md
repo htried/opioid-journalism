@@ -80,7 +80,7 @@ Gaya Gupta is a sophomore at Brown concentrating in computer science and English
 <br><br>
 
 <img src="html/drafts/img/lucas_fried.jpg" width="300"><br>
-Lucas Fried is a senior at Brown studying public policy and economics. He loves writing about people and politics and aims to use words for political advocacy after graduation.<br><br>
+Lucas Fried is a senior at Brown studying public policy and economics. He loves writing about people and politics and aims to use his words to work on issues of civic engagement after graduation.<br><br>
 
 Jane Yang is a junior at Brown University concentrating in Applied Math- Computer Science and appreciates the work of fellow student journalists.<br><br>
 
