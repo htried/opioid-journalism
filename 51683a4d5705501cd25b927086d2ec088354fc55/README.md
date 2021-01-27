@@ -5,12 +5,13 @@ We are a multidisciplinary group of journalists and data scientists from Brown U
 ## Articles
 We've broken up our project into multiple sections as follows:
 
-### How Rhode Island's Criminal Justice System Has Responded to the Opioid Epidemic (more tk)
+### How Rhode Island's Criminal Justice System Has Responded to the Opioid Epidemic
 - [An Inside Look at 30 years of Narcotics Prosecutions in Rhode Island](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/court_data.html) — Lena Renshaw, Colleen Cronin, Gaya Gupta and Marina Hunt
 - [Adult Drug Court: Rhode Island’s Judiciary Takes a Public Health Approach to the Opioid Crisis](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/adult_drug_court.html) — Ivy Scott
 - [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_diversion.html) (sidebar to Adult Drug Court story) — Ivy Scott
 - [Kristen's Law](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/kristens_law.html) — Marina Hunt
 - [Policing Drug Crimes in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/week_in_policing.html) — Marina Hunt
+- (tk) Rhode Island's Good Samaritan Law: Is It Saving Lives or Protecting Drug Dealers? — Gaya Gupta
 
 ### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years
 - [Three Years of Fatal Overdoses in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/providence_overdoses.html) — Olivia George, Marina Hunt, and Colleen Cronin
@@ -22,12 +23,12 @@ We've broken up our project into multiple sections as follows:
 ### Rhodes Pharmaceuticals — Rhode Island's Opioid Manufacturing Base
 - [For Nearly a Decade, Two RI Opioid Manufacturers Made Billions of Opioid Doses](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/rhodes.html) — Hal Triedman
 
-### Doctors and the Opioid Epidemic (more tk)
+### Doctors and the Opioid Epidemic
 - [Policing Doctors](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/bad_docs.html) — Li Goldstein
 - [The Opioid Influencers](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_influencers.html) — Hal Triedman
 - [A Doctor's Downfall](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/huntington.html) — Li Goldstein
 
-### The Human Toll (more tk)
+### The Human Toll
 - [He Could Not Be Saved](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/livingstone.html) — Max Kozlov
 - ["Recovery is Possible": One woman’s fight to save her own life and, now, the lives of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html) — Olivia George
 - [Not Just a White Problem: Minorities Are Dying of Opioid Overdoses. Rhode Island is Fighting to Stop It](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/not_just_a_white_problem.html) — Gaya Gupta and Ivy Scott
@@ -48,7 +49,7 @@ We've broken up our project into multiple sections as follows:
 - [Kemah Tolston](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_kemah_tolston.html) — Colleen Cronin
 - [Peter Michael Angelone](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/portraits_of_grief_peter_angelone.html) — Colleen Cronin
 
-### Attacking the Problem (more tk)
+### Attacking the Problem
 - [The Future of Overdose Prevention: Getting Naloxone into the Hands of Rhode Islanders Everywhere](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/naloxone.html) — Ivy Scott
 - [In an Effort to Stop One Opioid Epidemic, the VA Started Another](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/va_osi.html) — Greer Brigham
 - [VA Hospital Tries to Help Addicted Vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
