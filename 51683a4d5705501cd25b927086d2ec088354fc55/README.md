@@ -125,7 +125,7 @@ We've looked at a rich variety of data sources to get a deep understanding of th
 - US bankruptcy court documents
 - Rhode Island Board of Medical Licensure and Discipline records
 - Massachusetts Board of Registration in Medicine records
-- Police reports from Providence, RI; Newport, RI; Fall River, MA; Cohasset, MA; and elsewhere
+- Police reports from Providence, RI and elsewhere
 
 ## Tools
 We're using several different tools to store, process, and visualize data:
