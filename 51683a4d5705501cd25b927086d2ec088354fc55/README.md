@@ -55,7 +55,8 @@ We've broken up our project into multiple sections as follows:
 - [Rhode Island VA Hospital Tries to Help Addicted Vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
 - [RI Workers' Compensation System Takes On The Opioid Epidemic](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/workers_comp.html) — Maia Rosenfeld
 
-## Authors (more tk)
+## Our Team (more tk)
+### Reporters
 <img src="html/drafts/img/hal_triedman.jpg" width="300"><br>
 Hal Triedman is a December 2020 graduate of Brown University, with degrees in Computer Science and History. This project was his first experience with data journalism and computer-aided reporting, and he hopes to pursue the intersection of CS and journalism further as he starts his career.
 <br><br>
@@ -87,6 +88,17 @@ Gaya Gupta is a sophomore at Brown concentrating in computer science and English
 <img src="html/drafts/img/lucas_fried.jpg" width="300"><br>
 Lucas Fried is a senior at Brown studying public policy and economics. He loves writing about people and politics and aims to use his words to work on issues of civic engagement after graduation.<br><br>
 
+<img src="html/drafts/img/max_kozlov.jpg" width="300"><br>
+Max Kozlov is a science journalist from Boston, MA who graduated Brown University in 2020 with a degree in cognitive neuroscience. He was a 2020 AAAS Mass Media Fellow and his work has appeared in Quanta Magazine, St. Louis Post-Dispatch, The Scientist, and The Public's Radio. Read more of his work at [www.maxkozlov.com](www.maxkozlov.com).<br><br>
+
+<img src="html/drafts/img/marina_hunt.jpg" width="300"><br>
+Marina Hunt is a senior at Brown University concentrating in history. She worked last summer as a multimedia production intern for the Council on Foreign Relations, and plans to pursue a career in journalism.<br><br>
+
+<img src="html/drafts/img/nell_salzman.jpg" width="300"><br>
+Nell Salzman is a junior at Brown University concentrating in Comparative Literature and Latin American and Carribean Studies. She has a passion for telling other peoples' stories and has written for The Denver Westword and The College Hill Independent.<br><br>
+
+## Data Scientists
+
 Jane Yang is a junior at Brown University concentrating in Applied Math-Computer Science and appreciates the work of fellow student journalists.<br><br>
 
 <img src="html/drafts/img/gaby_rizk.jpeg" width="300"><br>
@@ -94,6 +106,8 @@ Gabriel Rizk is a senior at Brown studying computer science. He will be working 
 
 <img src="html/drafts/img/lena_renshaw.jpg" width="300"><br>
 Lena Renshaw graduated from Brown University in 2020 with a degree in computer science. She currently works at a healthcare technology company in New York City and is passionate about using technology to create meaningful social change.<br><br>
+
+## Editor / Project Lead
 
 <img src="html/drafts/img/tracy_breton.jpg" width="300"><br>
 Tracy Breton was an investigative and legal affairs reporter for The Providence Journal for 40 years and in 1994, was part of a team of reporters that won a Pulitzer Prize for a series of stories uncovering corruption in Rhode Island’s court system. She has been teaching journalism classes in the Nonfiction Writing Program of Brown University’s Department of English since 1997. Students she has taught at Brown now work at some of the nation’s most prestigious news media outlets. She is passionate about finding and reporting untold stories and training the next generation of journalists to do the job right. This year-long project was her brainchild and the first at Brown to formally integrate computer-assisted reporting from data science students with reporting by journalism students.
