@@ -110,6 +110,12 @@ Gabriel Rizk is a senior at Brown studying computer science. He will be working 
 <img src="html/drafts/img/lena_renshaw.jpg" width="300"><br>
 Lena Renshaw graduated from Brown University in 2020 with a degree in computer science. She currently works at a healthcare technology company in New York City and is passionate about using technology to create meaningful social change.<br><br>
 
+<img src="html/drafts/img/cece_xiao.jpg" width="300"><br>
+Cece Xiao graduated from Brown University in 2020 with a bachelor’s degree in Computer Science-Economics. She currently works as a software engineer in New York City.<br><br>
+
+<img src="html/drafts/img/iris_lee.jpg" width="300"><br>
+Iris is a recent graduate from Brown University, where she studied computer science. She now works in New York City as a software engineer at an internet services company.<br><br>
+
 ### Editor / Project Lead
 
 <img src="html/drafts/img/tracy_breton.jpg" width="300"><br>
