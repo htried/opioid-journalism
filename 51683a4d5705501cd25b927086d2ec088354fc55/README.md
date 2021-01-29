@@ -55,7 +55,7 @@ We've broken up our project into multiple sections as follows:
 - [Rhode Island VA Hospital Tries to Help Addicted Vets](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_va.html) — Greer Brigham
 - [RI Workers' Compensation System Takes On The Opioid Epidemic](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/workers_comp.html) — Maia Rosenfeld
 
-## Our Team (more tk)
+## Our Team
 ### Reporters
 <img src="html/drafts/img/hal_triedman.jpg" width="300"><br>
 Hal Triedman is a December 2020 graduate of Brown University, with degrees in Computer Science and History. This project was his first experience with data journalism and computer-aided reporting, and he hopes to pursue the intersection of CS and journalism further as he starts his career.
