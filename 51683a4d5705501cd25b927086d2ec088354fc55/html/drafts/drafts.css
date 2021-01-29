@@ -68,6 +68,8 @@ iframe {
 .navbar {
   overflow: hidden;
   background-color: #333;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 
 .navbar a {
@@ -77,8 +79,6 @@ iframe {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  margin-right: 0%;
-  margin-left: 0%;
 }
 
 .dropdown {
