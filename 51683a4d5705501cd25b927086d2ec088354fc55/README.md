@@ -101,7 +101,7 @@ Ivy Scott is a rising senior at Brown studying international journalism and Fren
 Nell Salzman is a junior at Brown University concentrating in Comparative Literature and Latin American and Carribean Studies. She has a passion for telling other peoples' stories and has written for The Denver Westword and The College Hill Independent.<br><br>
 
 ### Data Scientists
-<img src="html/drafts/img/jane_yang.jpeg" width="300"><br>
+<img src="html/drafts/img/jane_yang.jpg" width="300"><br>
 Jane Yang is a junior at Brown University concentrating in Applied Math-Computer Science and appreciates the work of fellow student journalists.<br><br>
 
 <img src="html/drafts/img/gaby_rizk.jpeg" width="300"><br>
