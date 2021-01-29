@@ -65,6 +65,9 @@ Hal Triedman is a December 2020 graduate of Brown University, with degrees in Co
 Olivia George is a junior at Brown University studying History and plans to pursue a career in investigative journalism. She has written for the Providence Journal and Teen Vogue, and this summer she will intern at The Virginian-Pilot.
 <br><br>
 
+<img src="html/drafts/img/ivy_scott.jpg" width="300"><br>
+Ivy Scott is a rising senior at Brown studying international journalism and French. Her writing has appeared in the Providence Journal and the Boston Globe.<br><br>
+
 <img src="html/drafts/img/colleen_cronin.jpg" width="300"><br>
 Colleen Cronin is a senior at Brown concentrating in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and hopes to pursue journalism after she graduates.
 <br><br>
@@ -93,9 +96,6 @@ Max Kozlov is a science journalist from Boston, MA who graduated Brown Universit
 
 <img src="html/drafts/img/marina_hunt.jpg" width="300"><br>
 Marina Hunt is a senior at Brown University concentrating in history. She worked last summer as a multimedia production intern for the Council on Foreign Relations, and plans to pursue a career in journalism.<br><br>
-
-<img src="html/drafts/img/ivy_scott.jpg" width="300"><br>
-Ivy Scott is a rising senior at Brown studying international journalism and French. Her writing has appeared in the Providence Journal and the Boston Globe.<br><br>
 
 <img src="html/drafts/img/nell_salzman.jpg" width="300"><br>
 Nell Salzman is a junior at Brown University concentrating in Comparative Literature and Latin American and Carribean Studies. She has a passion for telling other peoples' stories and has written for The Denver Westword and The College Hill Independent.<br><br>
