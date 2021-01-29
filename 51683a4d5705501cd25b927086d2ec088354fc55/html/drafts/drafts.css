@@ -2,13 +2,13 @@ body {
   background-color: white;
   font-family: georgia;
   margin-bottom: 100px;
-  margin-right: 20%;
-  margin-left: 20%;
 }
 
 h1 {
   font-family: georgia;
   text-align: center;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 h2 {
@@ -17,6 +17,8 @@ h2 {
   color: #6e6e6e;
   font-size: 24px;
   font-weight: lighter;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 h3 {
@@ -25,6 +27,8 @@ h3 {
   font-size: 20px;
   font-weight: lighter;
   font-style: italic;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 h5 {
@@ -32,12 +36,16 @@ h5 {
   text-align: center;
   font-weight: lighter;
   font-style: italic;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 p {
   font-family: georgia;
   font-size: 16px;
   line-height: 1.25;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 .center {
@@ -68,8 +76,6 @@ iframe {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  margin-right: 0%;
-  margin-left: 0%;
 }
 
 .navbar a {
