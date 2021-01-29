@@ -77,6 +77,8 @@ iframe {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  margin-right: 0%;
+  margin-left: 0%;
 }
 
 .dropdown {
