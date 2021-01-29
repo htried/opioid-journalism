@@ -89,16 +89,19 @@ Gaya Gupta is a sophomore at Brown concentrating in computer science and English
 Lucas Fried is a senior at Brown studying public policy and economics. He loves writing about people and politics and aims to use his words to work on issues of civic engagement after graduation.<br><br>
 
 <img src="html/drafts/img/max_kozlov.jpg" width="300"><br>
-Max Kozlov is a science journalist from Boston, MA who graduated Brown University in 2020 with a degree in cognitive neuroscience. He was a 2020 AAAS Mass Media Fellow and his work has appeared in Quanta Magazine, St. Louis Post-Dispatch, The Scientist, and The Public's Radio. Read more of his work at [www.maxkozlov.com](www.maxkozlov.com).<br><br>
+Max Kozlov is a science journalist from Boston, MA who graduated Brown University in 2020 with a degree in cognitive neuroscience. He was a 2020 AAAS Mass Media Fellow and his work has appeared in Quanta Magazine, St. Louis Post-Dispatch, The Scientist, and The Public's Radio.<br><br>
 
 <img src="html/drafts/img/marina_hunt.jpg" width="300"><br>
 Marina Hunt is a senior at Brown University concentrating in history. She worked last summer as a multimedia production intern for the Council on Foreign Relations, and plans to pursue a career in journalism.<br><br>
+
+<img src="html/drafts/img/ivy_scott.jpg" width="300"><br>
+Ivy Scott is a rising senior at Brown studying international journalism and French. Her writing has appeared in the Providence Journal and the Boston Globe.<br><br>
 
 <img src="html/drafts/img/nell_salzman.jpg" width="300"><br>
 Nell Salzman is a junior at Brown University concentrating in Comparative Literature and Latin American and Carribean Studies. She has a passion for telling other peoples' stories and has written for The Denver Westword and The College Hill Independent.<br><br>
 
 ### Data Scientists
-
+<img src="html/drafts/img/jane_yang.jpeg" width="300"><br>
 Jane Yang is a junior at Brown University concentrating in Applied Math-Computer Science and appreciates the work of fellow student journalists.<br><br>
 
 <img src="html/drafts/img/gaby_rizk.jpeg" width="300"><br>
