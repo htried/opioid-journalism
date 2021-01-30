@@ -62,11 +62,11 @@ Hal Triedman is a December 2020 graduate of Brown University, with degrees in Co
 <br><br>
 
 <img src="html/drafts/img/olivia_george.jpg" width="300"><br>
-Olivia George is a junior at Brown University studying History and plans to pursue a career in investigative journalism. She has written for the Providence Journal and Teen Vogue, and this summer she will intern at The Virginian-Pilot.
+Olivia George is a junior at Brown University studying history and plans to pursue a career in investigative journalism. She has written for The Providence Journal and Teen Vogue, and this summer she will intern at The Virginian-Pilot.
 <br><br>
 
 <img src="html/drafts/img/ivy_scott.jpg" width="300"><br>
-Ivy Scott is a rising senior at Brown studying international journalism and French. Her writing has appeared in the Providence Journal and the Boston Globe.<br><br>
+Ivy Scott is a rising senior at Brown studying international journalism and French. Her writing has appeared in The Providence Journal and The Boston Globe.<br><br>
 
 <img src="html/drafts/img/colleen_cronin.jpg" width="300"><br>
 Colleen Cronin is a senior at Brown concentrating in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and hopes to pursue journalism after she graduates.
@@ -98,11 +98,11 @@ Max Kozlov is a science journalist from Boston, MA who graduated Brown Universit
 Marina Hunt is a senior at Brown University concentrating in history. She worked last summer as a multimedia production intern for the Council on Foreign Relations, and plans to pursue a career in journalism.<br><br>
 
 <img src="html/drafts/img/nell_salzman.jpg" width="300"><br>
-Nell Salzman is a junior at Brown University concentrating in Comparative Literature and Latin American and Carribean Studies. She has a passion for telling other peoples' stories and has written for The Denver Westword and The College Hill Independent.<br><br>
+Nell Salzman is a junior at Brown University concentrating in comparative literature and Latin American and Carribean studies. She has a passion for telling other people's stories and has written for The Denver Westword and The College Hill Independent.<br><br>
 
 ### Data Scientists
 <img src="html/drafts/img/jane_yang.jpg" width="300"><br>
-Jane Yang is a junior at Brown University concentrating in Applied Math-Computer Science and appreciates the work of fellow student journalists.<br><br>
+Jane Yang is a junior at Brown University concentrating in applied math-computer science and appreciates the work of fellow student journalists.<br><br>
 
 <img src="html/drafts/img/gaby_rizk.jpeg" width="300"><br>
 Gabriel Rizk is a senior at Brown studying computer science. He will be working as a software engineer at Amazon after graduation.<br><br>
@@ -111,12 +111,12 @@ Gabriel Rizk is a senior at Brown studying computer science. He will be working 
 Lena Renshaw graduated from Brown University in 2020 with a degree in computer science. She currently works at a healthcare technology company in New York City and is passionate about using technology to create meaningful social change.<br><br>
 
 <img src="html/drafts/img/cece_xiao.jpg" width="300"><br>
-Cece Xiao graduated from Brown University in 2020 with a bachelor’s degree in Computer Science-Economics. She currently works as a software engineer in New York City.<br><br>
+Cece Xiao graduated from Brown University in 2020 with a bachelor’s degree in computer science-economics. She currently works as a software engineer in New York City.<br><br>
 
 <img src="html/drafts/img/iris_lee.jpg" width="300"><br>
-Iris is a recent graduate from Brown University, where she studied computer science. She now works in New York City as a software engineer at an internet services company.<br><br>
+Iris Lee is a recent graduate from Brown University, where she studied computer science. She now works in New York City as a software engineer at an internet services company.<br><br>
 
-### Editor / Project Lead
+### Editor / Project Leader
 
 <img src="html/drafts/img/tracy_breton.jpg" width="300"><br>
 Tracy Breton was an investigative and legal affairs reporter for The Providence Journal for 40 years and in 1994, was part of a team of reporters that won a Pulitzer Prize for a series of stories uncovering corruption in Rhode Island’s court system. She has been teaching journalism classes in the Nonfiction Writing Program of Brown University’s Department of English since 1997. Students she has taught at Brown now work at some of the nation’s most prestigious news media outlets. She is passionate about finding and reporting untold stories and training the next generation of journalists to do the job right. This year-long project was her brainchild and the first at Brown to formally integrate computer-assisted reporting from data science students with reporting by journalism students.
@@ -131,10 +131,25 @@ We've looked at a rich variety of data sources to get a deep understanding of th
 - Publicly available doctor payment data from the Center for Medicare/Medicaid Services
 - Digitized Rhode Island Judiciary records from 1980 - 2019
 - Lawsuits against opioid manufacturers, distributors and pharmacies filed in Rhode Island and elsewhere
-- US bankruptcy court documents
+- US Bankruptcy court documents
 - Rhode Island Board of Medical Licensure and Discipline records
 - Massachusetts Board of Registration in Medicine records
-- Police reports from Providence, RI and elsewhere
+- Data from the US Department of Veterans Affairs on medical center quality and changes in opioid prescription rates 
+- Data from the U.S. Center for Disease Control and Prevention (CDC)
+- Data from the Northeastern University School of Law Health In Justice Action Lab 
+- Massachusetts Trial Court Electronic Case Access data
+- Data accessed from the Rhode Island Judiciary Public Portal 
+- Providence Probate Court records
+- Documents from case files in Rhode Island Superior, District and Family Courts 
+- Quincy, MA District Court records
+- Cohasset, MA police records
+- Providence, RI police records
+- RI Kids Count Facebook
+- Rhode Island Department of Children Youth & Families reports 
+- legacy.com obituaries 
+- Annual reports filed by the Rhode Island Department of Attorney General with the General Assembly regarding The Good Samaritan Law 
+- Rhode Island Public Health Institute report
+- 02907 Health Equity Zone report
 
 ## Tools
 We're using several different tools to store, process, and visualize data:
