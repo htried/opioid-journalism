@@ -48,6 +48,12 @@ p {
   margin-left: 20%;
 }
 
+small {
+  font-family: georgia;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
 .center {
   display: block;
   margin-left: auto;
