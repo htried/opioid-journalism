@@ -131,7 +131,7 @@ We've looked at a rich variety of data sources to get a deep understanding of th
 - Publicly available doctor payment data from the Center for Medicare/Medicaid Services
 - Digitized Rhode Island Judiciary records from 1980 - 2019
 - Lawsuits against opioid manufacturers, distributors and pharmacies filed in Rhode Island and elsewhere
-- US Bankruptcy court documents
+- US Bankruptcy Court documents
 - Rhode Island Board of Medical Licensure and Discipline records
 - Massachusetts Board of Registration in Medicine records
 - Data from the US Department of Veterans Affairs on medical center quality and changes in opioid prescription rates 
@@ -150,6 +150,7 @@ We've looked at a rich variety of data sources to get a deep understanding of th
 - Annual reports filed by the Rhode Island Department of Attorney General with the General Assembly regarding The Good Samaritan Law 
 - Rhode Island Public Health Institute report
 - 02907 Health Equity Zone report
+- Various academic and medical journal articles
 
 ## Tools
 We're using several different tools to store, process, and visualize data:
