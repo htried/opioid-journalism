@@ -58,7 +58,7 @@ We've broken up our project into multiple sections as follows:
 ## Our Team
 ### Reporters
 <img src="html/drafts/img/hal_triedman.jpg" width="300"><br>
-Hal Triedman is a December 2020 graduate of Brown University, with degrees in Computer Science and History. This project was his first experience with data journalism and computer-aided reporting, and he hopes to pursue the intersection of CS and journalism further as he starts his career.
+Hal Triedman is a December 2020 graduate of Brown University, with degrees in computer science and history. This project was his first experience with data journalism and computer-aided reporting, and he hopes to pursue the intersection of CS and journalism further as he starts his career.
 <br><br>
 
 <img src="html/drafts/img/olivia_george.jpg" width="300"><br>
@@ -66,7 +66,7 @@ Olivia George is a junior at Brown University studying history and plans to purs
 <br><br>
 
 <img src="html/drafts/img/ivy_scott.jpg" width="300"><br>
-Ivy Scott is a rising senior at Brown studying international journalism and French. Her writing has appeared in The Providence Journal and The Boston Globe.<br><br>
+Ivy Scott is a senior at Brown studying international journalism and French. Her writing has appeared in The Providence Journal and The Boston Globe.<br><br>
 
 <img src="html/drafts/img/colleen_cronin.jpg" width="300"><br>
 Colleen Cronin is a senior at Brown concentrating in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and hopes to pursue journalism after she graduates.
