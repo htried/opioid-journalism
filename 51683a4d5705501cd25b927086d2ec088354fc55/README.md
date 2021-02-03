@@ -102,7 +102,7 @@ Nell Salzman is a junior at Brown University concentrating in comparative litera
 
 ### Data Scientists
 <img src="html/drafts/img/jane_yang.jpg" width="300"><br>
-Jane Yang is a junior at Brown University concentrating in applied math-computer science and appreciates the work of fellow student journalists.<br><br>
+Jane Yue Yang is a junior at Brown University concentrating in applied math-computer science and appreciates the work of fellow student journalists.<br><br>
 
 <img src="html/drafts/img/gaby_rizk.jpeg" width="300"><br>
 Gabriel Rizk is a senior at Brown studying computer science. He will be working as a software engineer at Amazon after graduation.<br><br>
@@ -114,7 +114,7 @@ Lena Renshaw graduated from Brown University in 2020 with a degree in computer s
 Cece Xiao graduated from Brown University in 2020 with a bachelor’s degree in computer science-economics. She currently works as a software engineer in New York City.<br><br>
 
 <img src="html/drafts/img/iris_lee.jpg" width="300"><br>
-Iris Lee is a recent graduate from Brown University, where she studied computer science. She now works in New York City as a software engineer at an internet services company.<br><br>
+Iris Lee is a 2020 graduate of Brown University, where she studied computer science. She now works in New York City as a software engineer at an internet services company.<br><br>
 
 ### Editor / Project Leader
 
@@ -153,7 +153,7 @@ We've looked at a rich variety of data sources to get a deep understanding of th
 - Various academic and medical journal articles
 
 ## Tools
-We're using several different tools to store, process, and visualize data:
+We're using several different tools to store, process and visualize data:
 - Google Cloud Platform
 - BigQuery
 - Google Datastudio
@@ -161,6 +161,6 @@ We're using several different tools to store, process, and visualize data:
 - Github Pages (for mocking up articles)
 - d3.js
 
-The members of the data science and graphics team are Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee, Jane Yang, and Hal Triedman. This project started as a part of Brown University's CS for Social Change practicum.
+The members of the data science and graphics team are Hal Triedman, Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee and Jane Yang. This project started as a part of Brown University's CS for Social Change practicum.
 
-Hal Triedman (github: [htried](https://github.com/htried)), Gaby Rizk, and Jane Yang coded this site, and Hal Triedman led the CS for Social Change team.
+Hal Triedman (github: [htried](https://github.com/htried)), Gaby Rizk and Jane Yang coded this site and Hal Triedman led the CS for Social Change team.
