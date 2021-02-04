@@ -73,7 +73,7 @@ Colleen Cronin is a senior at Brown concentrating in English on the non-fiction 
 <br><br>
 
 <img src="html/drafts/img/greer_brigham.jpg" width="300"><br>
-Greer Brigham is a recent graduate from Brown University where he studied political science and economics. The service of his father, Lt. Henry D. Brigham III, USS Fahrion (FFG-22), inspired Greer to cover the opioid epidemic's effects on veterans. Greer is currently using his background in politics, economics, and journalism to investigate issues related to income inequality. 
+Greer Brigham is a 2020 graduate from Brown University where he studied political science and economics. The service of his father, Lt. Henry D. Brigham III, USS Fahrion (FFG-22), inspired Greer to cover the opioid epidemic's effects on veterans. Greer is currently using his background in politics, economics, and journalism to investigate issues related to income inequality. 
 <br><br>
 
 <img src="html/drafts/img/li_goldstein.jpeg" width="300"><br>
