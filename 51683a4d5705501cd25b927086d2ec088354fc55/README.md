@@ -161,6 +161,6 @@ We're using several different tools to store, process and visualize data:
 - Github Pages (for mocking up articles)
 - d3.js
 
-The members of the data science and graphics team are Hal Triedman, Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee and Jane Yang. This project started as a part of the Brown University Computer Science Department's "CS for Social Change" class.
+The members of the data science and graphics team are Hal Triedman, Lena Renshaw, Cece Xiao, Gaby Rizk, Iris Lee and Jane Yue Yang. This project started as a part of the Brown University Computer Science Department's "CS for Social Change" class.
 
-Hal Triedman (github: [htried](https://github.com/htried)), Gaby Rizk and Jane Yang coded this site and Hal Triedman led the CS for Social Change student team.
+Hal Triedman (github: [htried](https://github.com/htried)), Gaby Rizk and Jane Yue Yang coded this site and Hal Triedman led the CS for Social Change student team.
