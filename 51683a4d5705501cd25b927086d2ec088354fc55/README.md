@@ -1,4 +1,4 @@
-# Welcome the Rhode Island Opioid Data Journalism Project
+# Welcome to the Rhode Island Opioid Data Journalism Project
 
 We are a multidisciplinary group of journalists and data scientists from Brown University, led by Pulitzer Prize-winning journalist Tracy Breton. Over the past year, we have worked together to investigate the opioid epidemic in Rhode Island and tell critical stories about a decades-long national crisis, producing dozens of stories along the way. Journalists have found compelling stories about opioids in RI, ranging from human interest to data-driven investigation. At the same time, we've utilized the expertise and technical know-how of data scientists to dig into daunting datasets and create evocative and informative graphics. We hope these pieces will be published in early 2021.
 
