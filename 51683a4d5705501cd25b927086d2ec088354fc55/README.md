@@ -1,4 +1,4 @@
-# Welcome the Rhode Island Opioid Data Journalism Project
+# Welcome to the Rhode Island Opioid Data Journalism Project
 
 We are a multidisciplinary group of journalists and data scientists from Brown University, led by Pulitzer Prize-winning journalist Tracy Breton. Over the past year, we have worked together to investigate the opioid epidemic in Rhode Island and tell critical stories about a decades-long national crisis, producing dozens of stories along the way. Journalists have found compelling stories about opioids in RI, ranging from human interest to data-driven investigation. At the same time, we've utilized the expertise and technical know-how of data scientists to dig into daunting datasets and create evocative and informative graphics. We hope these pieces will be published in early 2021.
 
@@ -11,7 +11,7 @@ We've broken up our project into multiple sections as follows:
 - [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/ri_diversion.html) (sidebar to Adult Drug Court story) — Ivy Scott
 - [Kristen's Law](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/kristens_law.html) — Marina Hunt
 - [Policing Drug Crimes in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/week_in_policing.html) — Marina Hunt
-- [Rhode Island's Good Samaritan Law: Is It Saving Lives or Protecting Drug Dealers?](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/good_samaritan.html) — Gaya Gupta
+<!-- - [Rhode Island's Good Samaritan Law: Is It Saving Lives or Protecting Drug Dealers?](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/good_samaritan.html) — Gaya Gupta -->
 
 ### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years
 - [Three Years of Fatal Overdoses in Providence](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/providence_overdoses.html) — Olivia George, Marina Hunt and Colleen Cronin
@@ -30,7 +30,7 @@ We've broken up our project into multiple sections as follows:
 
 ### The Human Toll
 - [He Could Not Be Saved](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/livingstone.html) — Max Kozlov
-- ["Recovery is Possible": One woman’s fight to save her own life and, now, the lives of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html) — Olivia George
+<!-- - ["Recovery is Possible": One woman’s fight to save her own life and, now, the lives of others.](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/roxxanne_newman.html) — Olivia George -->
 - [Not Just a White Problem: Minorities Are Dying of Opioid Overdoses. Rhode Island is Fighting to Stop It](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/not_just_a_white_problem.html) — Gaya Gupta and Ivy Scott
 - [Stigma and Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/opioid_stigma.html) — Lucas Fried and Nell Salzman
 - [Grandparents Raising Children of Those Lost to Addiction](https://htried.github.io/opioid-journalism/51683a4d5705501cd25b927086d2ec088354fc55/html/drafts/grandparents.html) — Olivia George
