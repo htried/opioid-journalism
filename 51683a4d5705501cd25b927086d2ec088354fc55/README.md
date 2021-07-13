@@ -1,6 +1,6 @@
 # Welcome to the Rhode Island Opioid Data Journalism Project
 
-We are a multidisciplinary group of journalists and data scientists from Brown University, led by Pulitzer Prize-winning journalist Tracy Breton. Over the past year, we have worked together to investigate the opioid epidemic in Rhode Island and tell critical stories about a decades-long national crisis, producing dozens of stories along the way. Journalists have found compelling stories about opioids in RI, ranging from human interest to data-driven investigation. At the same time, we've utilized the expertise and technical know-how of data scientists to dig into daunting datasets and create evocative and informative graphics. We hope these pieces will be published in early 2021.
+We are a multidisciplinary group of journalists and data scientists from Brown University, led by Pulitzer Prize-winning journalist Tracy Breton. Over the past 18 months, we have worked together to investigate the opioid epidemic in Rhode Island and tell critical stories about a decades-long national crisis, producing dozens of stories along the way. Journalists have found compelling stories about opioids in RI, ranging from human interest to data-driven investigation. At the same time, we've utilized the expertise and technical know-how of data scientists to dig into daunting datasets and create evocative and informative graphics. We hope these pieces will be published in 2021.
 
 ## Articles
 We've broken up our project into multiple sections as follows:
@@ -119,7 +119,7 @@ Iris Lee is a 2020 graduate of Brown University, where she studied computer scie
 ### Editor / Project Leader
 
 <img src="html/drafts/img/tracy_breton.jpg" width="300"><br>
-Tracy Breton was an investigative and legal affairs reporter for The Providence Journal for 40 years and in 1994, was part of a team of reporters that won a Pulitzer Prize for a series of stories uncovering corruption in Rhode Island’s court system. She has been teaching journalism classes in the Nonfiction Writing Program of Brown University’s Department of English since 1997. Students she has taught at Brown now work at some of the nation’s most prestigious news media outlets. She is passionate about finding and reporting untold stories and training the next generation of journalists to do the job right. This year-long project was her brainchild and the first at Brown to formally integrate computer-assisted reporting from data science students with reporting by journalism students.
+Tracy Breton was an investigative and legal affairs reporter for The Providence Journal for 40 years and in 1994, was part of a team of reporters that won a Pulitzer Prize for a series of stories uncovering corruption in Rhode Island’s court system. She has been teaching journalism classes in the Nonfiction Writing Program of Brown University’s Department of English since 1997. Students she has taught at Brown now work at some of the nation’s most prestigious news media outlets. She is passionate about finding and reporting untold stories and training the next generation of journalists to do the job right. This project was her brainchild and the first at Brown to formally integrate computer-assisted reporting from data science students with reporting by journalism students.
 <br><br>
 
 ## Datasets and Sources
