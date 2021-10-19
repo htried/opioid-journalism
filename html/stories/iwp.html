@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<style>
+
+  /* set the CSS */
+
+  .line {
+      fill: none;
+      /*stroke: #aaa;
+      stroke: #43484c;
+      stroke: #405275;
+      stroke: rgba(40, 53, 79, .95);
+      stroke: #161719;
+      stroke: #f99e1a;*/
+      stroke: #f89e35;
+      stroke-width: 2px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  .line2 {
+      fill: none;
+      stroke: #aaa;
+      stroke-width: 2px;
+  }
+
+  .line3 {
+      fill: none;
+      stroke: #405275;
+      stroke-width: 2px;
+  }
+
+  .line3-text {
+      fill: #405275;
+      stroke: #405275;
+  }
+
+  .line2-text {
+      fill: #aaa;
+      stroke: #aaa;
+  }
+
+  .line-text {
+      fill: #f89e35;
+      stroke: #f89e35;
+  }
+
+  div.tooltip {
+      position: absolute;
+      text-align: center;
+      padding: 5px;
+      font-size: 12px;
+      font-weight: bold;
+      background: #f99e1a;
+      border: 0px;
+      border-radius: 8px;
+  }
+
+  .tooltip p {
+      margin: 0;
+      padding: 0;
+  }
+
+  circle {
+      fill: rgba(40, 53, 79, .95);
+  }
+
+  .dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 960px;
+  height: 500px;
+  position: relative;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+path.slice{
+    stroke-width:2px;
+}
+
+polyline{
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+</style>
+<head>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<h1>
+	Injured Worker's Pharmacy
+</h1>
+<body>
+<p>
+  We investigated the Injured Worker's Pharmacy, a mail order pharmacy based in Massachussets that ships opiods all across the US
+</p>
+<h1>Some fast facts</h1>
+<ul>
+  <link rel="stylesheet" type="text/css" href="../graphs/styles.css">
+    <ul>
+      <li style="font-family: auto">Distributed over 51.4 million pain pills across the United States</li>
+      <li style="font-family: auto">Largest Pharmacy in the state by pain pills distributed</li>
+      <li style="font-family: auto">Deliver 3 month supllies of opioids to your doorstep when you can only get a 1 month supply at a local pharmacy</li>
+      <li style="font-family: auto"> Currently under investigation by the Massachussets Attorney General's office </li>
+      <li style="font-family: auto"> They are owned by ACON Investments, a private equity firm. They also own a smaller California-based mail order pharmacy called Chronic Care </li>
+
+    </ul>
+<h1>
+	Growth of the Injured Worker's Pharmacy
+</h1>
+<p>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+<div id="container" class="svg-container"></div>
+<script>
+
+        // define the line
+        function basicy() {
+            var ret = d3.line()
+                .x(function (d) {
+                    return x(d.year);
+                })
+            return ret;
+        }
+        var valueline = basicy()
+            .y(function (d) {
+                return y(d.DOSAGE_UNIT);
+            });
+
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        // append the svg obgect to the body of the page
+        // appends a 'group' element to 'svg'
+        // moves the 'group' element to the top left margin
+        const width = 960;
+        const height = 420;
+        const margin = 5;
+        const padding = 5;
+        const adj = 70;
+
+        var x = d3.scaleLinear().range([0, width]);
+        var y = d3.scaleLinear().range([height, 0]);
+        // we are appending SVG first
+        const svg = d3.select("div#container").append("svg")
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", "-"
+                  + adj + " -"
+                  + adj + " "
+                  + (width + adj *3) + " "
+                  + (height + adj*3))
+            .style("padding", padding)
+            .style("margin", margin)
+            .classed("svg-content", true);
+
+        // Get the data
+        var datalist = [];
+        d3.csv("../graphs/data/iwp_growth.csv", function (error, data) {
+            if (error) throw error;
+            // scale the range of the data
+            x.domain(d3.extent(data, function (d) {
+                return d.year;
+            }));
+            y.domain([0, d3.max(data, function (d) {
+                return Math.max(d.DOSAGE_UNIT);
+            })]);
+
+            // add the valueline path.
+            var dataArray = [{
+                "name": "Number of Pills",
+                "x": 100,
+                "y": 50,
+                "class": "line-text",
+                "class2": "line",
+                "dataline": valueline
+            }]
+
+            for (var i = 0; i < dataArray.length; i++) {
+                svg.append("path")
+                    .data([data])
+                    .attr("class", dataArray[i].class2)
+                    .attr("d", dataArray[i].dataline)
+            }
+
+            // add the dots with tooltips
+            var fixeddot = svg.selectAll("dot")
+                .data(data)
+                .enter().append("circle")
+                .attr("r", 5)
+
+            fixeddot.attr("cx", function (d) {
+                    return x(d.year);
+                })
+                .attr("cy", function (d) {
+                    return y(d.DOSAGE_UNIT);
+                })
+                .on("mouseover", function (d) {
+                    div.transition()
+                        .duration(200)
+                        .style("opacity", .9);
+                    div.html("<p>Year: " + d.year + "</p> <p>Pill Count: " + d.DOSAGE_UNIT + "</p>")
+                        .style("left", (d3.event.pageX) + "px")
+                        .style("top", (d3.event.pageY - 28) + "px");
+                });
+
+            // add the X Axis
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x));
+
+            // add the Y Axis
+            svg.append("g")
+                .call(d3.axisLeft(y));
+
+        });
+    </script>
+</p>
+<p>We can see that the IWP grew steadily over time, but had a sudden decease in the amount of pills that were distributed in 2014. We are not sure why this dip occurred.</p>
+<a style="font-family: auto" href="https://htried.github.io/opioid-journalism/html/graphs/donut_chart.html">Distribution of Opioids</a>
+
+<p> Click this link above to view the distribution of drugs that the Injured Worker's Pharmacy distributes. </p>
+
+
+<ul>
+<link rel="stylesheet" type="text/css" href="../graphs/styles.css">
+  <ul>
+    <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/html/stories/dollars4docs.html">Dollars for Docs</a></li>
+    <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/html/stories/iwp.html">Injured Workers Pharmacy</a></li>
+    <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/html/stories/ods.html">Overdoses in Providence</a></li>
+    <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/html/stories/rhodes.html">Rhodes</a></li>
+    <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/html/stories/courtdata.html">Court Data</a></li>
+    <li><a style="font-family: auto" href="https://htried.github.io/opioid-journalism/html/stories/naloxone.html">Narcan Story</a></li>
+
+  </ul>
+</body>
+</html>

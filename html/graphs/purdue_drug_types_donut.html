@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<style>
+.nextPreviousButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+.svg-container2 {
+  height: 450px;
+  width: 800px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: 50px;
+  /* width: 960px;
+  height: 500px; */
+  position: relative;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+path.slice{
+    stroke-width:5px;
+}
+
+polyline{
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+text{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.legend {
+	position:absolute;
+	left:800px;
+	top:350px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.next {
+    background-color: #002147;
+    color: white;
+}
+
+.round {
+    border-radius: 15px;
+}
+
+</style>
+<title>Rhodes Drug Types</title>
+</head>
+<body>
+
+<h2>Purdue Drug Types Per Year</h2>
+ <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Year</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a class="six">2006</a>
+    <a class="seven">2007</a>
+    <a class="eight">2008</a>
+    <a class="nine">2009</a>
+    <a class="ten">2010</a>
+    <a class="eleven">2011</a>
+    <a class="twelve">2012</a>
+    <a class="thirteen">2013</a>
+    <a class="fourteen">2014</a>
+  </div>
+</div>
+
+<div id="container2" class="svg-container2"></div>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+var svg = d3.select("div#container2")
+    .append("svg")
+    .append("g")
+
+svg.append("g")
+    .attr("class", "slices");
+svg.append("g")
+    .attr("class", "labels");
+svg.append("g")
+    .attr("class", "lines");
+
+var width = 960,
+    height = 450,
+    margin = 30,
+    radius = Math.min(width, height) / 2;
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function(d) {
+        return d.value;
+    });
+
+var arc = d3.svg.arc()
+    .innerRadius(radius * 0.4)
+    .outerRadius(radius * 0.8);
+
+var outerArc = d3.svg.arc()
+    .innerRadius(radius * 0.9)
+    .outerRadius(radius * 0.9);
+
+svg.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+var key = function(d){ return d.data.label; };
+
+var color = d3.scale.ordinal()
+    .domain(["HYDROMORPHONE HYDROCHLORIDE", "HYDROCODONE BITARTRATE HEMIPENTAHYDRATE", "OXYCODONE HYDROCHLORIDE", "BUPRENORPHINE", "MORPHINE SULFATE PENTAHYDRATE(I.E.,5H20)"])
+    .range(["#98abc5", "#8a89a6", "#6b486b", "#a05d56", "#ff8c00"]);
+
+var legend = d3.select("div#container2").append("svg")
+      .attr("class", "legend")
+      .attr("width", radius * 2)
+      .attr("height", radius * 2)
+    .selectAll("g")
+      .data(color.domain().slice())
+    .enter().append("g")
+      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+
+  legend.append("rect")
+      .attr("width", 18)
+      .attr("height", 18)
+      .style("fill", color);
+
+  legend.append("text")
+      .attr("x", 24)
+      .attr("y", 9)
+      .attr("dy", ".35em")
+      .text(function(d) { return d; });
+
+function getData (year_selected) {
+  return d3.csv("data/purdue_drug_types.csv", function(d) {
+    return {
+      year: d.year,
+      name : d.Ingredient_Name,
+      quantity : d.QUANTITY,
+    };
+  }, function(data) {
+    console.log(data)
+    console.log(year_selected)
+    var filtered = data.filter(function (d) { console.log(d.year == year_selected)
+      return d.year == year_selected});
+    console.log("filtered")
+    console.log(filtered)
+    var zipped = filtered.map(function(label, i) {
+        var val =  { label: filtered[i].name, value: filtered[i].quantity }
+        return val
+    });
+console.log("zipped")
+    console.log(zipped)
+    change(zipped)
+  });
+}
+
+getData("2006");
+
+d3.select(".six")
+  .on("click", function(){
+        getData("2006");
+    });
+
+d3.select(".seven")
+  .on("click", function(){
+        getData("2007");
+    });
+
+d3.select(".eight")
+  .on("click", function(){
+        getData("2008");
+    });
+
+d3.select(".nine")
+  .on("click", function(){
+        getData("2009");
+    });
+
+d3.select(".ten")
+    .on("click", function(){
+        getData("2010");
+    });
+
+d3.select(".eleven")
+    .on("click", function(){
+        getData("2011");
+    });
+
+d3.select(".twelve")
+    .on("click", function(){
+        getData("2012");
+    });
+
+d3.select(".thirteen")
+    .on("click", function(){
+        getData("2013");
+    });
+
+d3.select(".fourteen")
+    .on("click", function(){
+        getData("2014");
+    });
+
+function change(data) {
+
+    /* ------- PIE SLICES -------*/
+    var slice = svg.select(".slices").selectAll("path.slice")
+        .data(pie(data), key);
+
+    slice.enter()
+        .insert("path")
+        .style("fill", function(d) { return color(d.data.label); })
+        .attr("class", "slice");
+
+    slice
+        .transition().duration(1000)
+        .attrTween("d", function(d) {
+            this._current = this._current || d;
+            var interpolate = d3.interpolate(this._current, d);
+            this._current = interpolate(0);
+            return function(t) {
+                return arc(interpolate(t));
+            };
+        })
+
+    slice.exit()
+        .remove();
+
+    /* ------- TEXT LABELS -------*/
+
+    var text = svg.select(".labels").selectAll("text")
+        .data(pie(data), key);
+
+    text.enter()
+        .append("text")
+        .attr("dy", ".35em")
+        .text(function(d) {
+            return d.data.label.split(" ")[0];
+        });
+
+    function midAngle(d){
+        return d.startAngle + (d.endAngle - d.startAngle)/2;
+    }
+
+    text.transition().duration(1000)
+        .attrTween("transform", function(d) {
+            this._current = this._current || d;
+            var interpolate = d3.interpolate(this._current, d);
+            this._current = interpolate(0);
+            return function(t) {
+                var d2 = interpolate(t);
+                var pos = outerArc.centroid(d2);
+                pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
+                return "translate("+ pos +")";
+            };
+        })
+        .styleTween("text-anchor", function(d){
+            this._current = this._current || d;
+            var interpolate = d3.interpolate(this._current, d);
+            this._current = interpolate(0);
+            return function(t) {
+                var d2 = interpolate(t);
+                return midAngle(d2) < Math.PI ? "start":"end";
+            };
+        });
+
+    text.exit()
+        .remove();
+
+    /* ------- SLICE TO TEXT POLYLINES -------*/
+
+    var polyline = svg.select(".lines").selectAll("polyline")
+        .data(pie(data), key);
+
+    polyline.enter()
+        .append("polyline");
+
+    polyline.transition().duration(1000)
+        .attrTween("points", function(d){
+            this._current = this._current || d;
+            var interpolate = d3.interpolate(this._current, d);
+            this._current = interpolate(0);
+            return function(t) {
+                var d2 = interpolate(t);
+                var pos = outerArc.centroid(d2);
+                pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+                return [arc.centroid(d2), outerArc.centroid(d2), pos];
+            };
+        });
+
+    polyline.exit()
+        .remove();
+};
+
+</script>
+<br><br>
+<p>This graphic is showing the share of each drug ingredient's quantity of transactions for Purdue Pharma per year from 2006-2014. The graph starts off by depicting 2006's shares. If you click through and see how the shares change, you will notice that oxycodone slowly starts to decrease a bit and then there is an enormous decline in its share in 2008. 2008 was the year after Purdue pleaded guilty to the largest pharmaceutical lawsuit. Buprenorphine begins to make an appearance in 2010 and its share continues to increase through 2014.</p>
+
+<div class="nextPreviousButtons">
+  <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/html/graphs/multi-line_drugs_combined.html" class="previous round">&laquo; Previous</a>
+  <a style="font-family: auto" href="https://htried.github.io/opioid-journalism/html/graphs/rhodes_drug_types_donut.html" class="next round">Rhodes Drug Types &raquo;</a>
+</div>
+</body>
