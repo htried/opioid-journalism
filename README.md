@@ -62,14 +62,14 @@ Hal Triedman is a December 2020 graduate of Brown University, with degrees in co
 <br><br>
 
 <img src="html/drafts/img/olivia_george.jpg" width="300"><br>
-Olivia George is a junior at Brown University studying history and plans to pursue a career in investigative journalism. She has written for The Providence Journal and Teen Vogue, and this summer she will intern at The Virginian-Pilot.
+Olivia George is a senior at Brown University studying history and plans to pursue a career in investigative journalism. She has written for The Providence Journal and Teen Vogue, and in the summer of 2021 she interned at The Virginian-Pilot.
 <br><br>
 
 <img src="html/drafts/img/ivy_scott.jpg" width="300"><br>
-Ivy Scott is a senior at Brown studying international journalism and French. Her writing has appeared in The Providence Journal and The Boston Globe.<br><br>
+Ivy Scott is a 2021 Brown University graduate who studied international journalism and French. Her writing has appeared in The Providence Journal and The Boston Globe.<br><br>
 
 <img src="html/drafts/img/colleen_cronin.jpg" width="300"><br>
-Colleen Cronin is a senior at Brown concentrating in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and hopes to pursue journalism after she graduates.
+Colleen Cronin is a 2021 graduate from Brown University who concentrated in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and is currently a freelance journalist working for the Daily Dot and the Boston Globe.
 <br><br>
 
 <img src="html/drafts/img/greer_brigham.jpg" width="300"><br>
@@ -77,35 +77,35 @@ Greer Brigham is a 2020 graduate from Brown University where he studied politica
 <br><br>
 
 <img src="html/drafts/img/li_goldstein.jpeg" width="300"><br>
-Li Goldstein is a junior at Brown University concentrating in English, Nonfiction Writing. She currently works as a managing editor at The Brown Daily Herald, and hopes to pursue a career in journalism after graduation.
+Li Goldstein is a senior at Brown University concentrating in English, Nonfiction Writing. She currently works as a managing editor at The Brown Daily Herald, and hopes to pursue a career in journalism after graduation.
 <br><br>
 
 <img src="html/drafts/img/maia_rosenfeld.jpeg" width="300"><br>
-Maia Rosenfeld is a Data Reporter and Scripps Howard Fellow at the Scripps Washington Bureau. She graduated from Brown in 2020, where she concentrated in Literary Arts and served as Metro News Editor for The Brown Daily Herald.
+Maia Rosenfeld is a television data reporter in Philadelphia, PA, and was a Scripps Howard Fellow at the Scripps Washington Bureau. She graduated from Brown in 2020, where she concentrated in Literary Arts and served as Metro News Editor for The Brown Daily Herald.
 <br><br>
 
 <img src="html/drafts/img/gaya_gupta.jpg" width="300"><br>
-Gaya Gupta is a sophomore at Brown concentrating in computer science and English. She writes for The College Hill Independent and hopes to pursue a career melding reporting and data science as a member of an investigative reporting team. 
+Gaya Gupta is a Junior at Brown concentrating in computer science and English. She writes for The College Hill Independent and hopes to pursue a career melding reporting and data science as a member of an investigative reporting team. 
 <br><br>
 
 <img src="html/drafts/img/lucas_fried.jpg" width="300"><br>
-Lucas Fried is a senior at Brown studying public policy and economics. He loves writing about people and politics and aims to use his words to work on issues of civic engagement after graduation.<br><br>
+Lucas Fried is a 2021 Brown University graduate, who studied public policy and economics. He loves writing about people and politics and is using his words to work on issues of civic engagement after graduation.<br><br>
 
 <img src="html/drafts/img/max_kozlov.jpg" width="300"><br>
 Max Kozlov is a science journalist from Boston, MA who graduated Brown University in 2020 with a degree in cognitive neuroscience. He was a 2020 AAAS Mass Media Fellow and his work has appeared in Quanta Magazine, St. Louis Post-Dispatch, The Scientist, and The Public's Radio.<br><br>
 
 <img src="html/drafts/img/marina_hunt.jpg" width="300"><br>
-Marina Hunt is a senior at Brown University concentrating in history. She worked last summer as a multimedia production intern for the Council on Foreign Relations, and plans to pursue a career in journalism.<br><br>
+Marina Hunt is a 2021 graduate from Brown University who concentrated in history. She worked in the summer of 2020 as a multimedia production intern for the Council on Foreign Relations, and plans to pursue a career in journalism.<br><br>
 
 <img src="html/drafts/img/nell_salzman.jpg" width="300"><br>
-Nell Salzman is a junior at Brown University concentrating in comparative literature and Latin American and Carribean studies. She has a passion for telling other people's stories and has written for The Denver Westword and The College Hill Independent.<br><br>
+Nell Salzman is a senior at Brown University concentrating in comparative literature and Latin American and Carribean studies. She has a passion for telling other people's stories and has written for The Denver Westword and The College Hill Independent.<br><br>
 
 ### Data Scientists
 <img src="html/drafts/img/jane_yang.jpg" width="300"><br>
-Jane Yue Yang is a junior at Brown University concentrating in applied math-computer science and appreciates the work of fellow student journalists.<br><br>
+Jane Yue Yang is a senior at Brown University concentrating in applied math-computer science and appreciates the work of fellow student journalists.<br><br>
 
 <img src="html/drafts/img/gaby_rizk.jpeg" width="300"><br>
-Gabriel Rizk is a senior at Brown studying computer science. He will be working as a software engineer at Amazon after graduation.<br><br>
+Gabriel Rizk is a 2021 Brown Unversity graduate, where he studied computer science. He has worked as a software engineer at Amazon since graduation.<br><br>
 
 <img src="html/drafts/img/lena_renshaw.jpg" width="300"><br>
 Lena Renshaw graduated from Brown University in 2020 with a degree in computer science. She currently works at a healthcare technology company in New York City and is passionate about using technology to create meaningful social change.<br><br>
