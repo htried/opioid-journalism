@@ -11,7 +11,6 @@ We've broken up our project into multiple sections as follows:
 - [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/html/ri_diversion.html) — Ivy Scott
 - [Kristen's Law](https://htried.github.io/opioid-journalism/html/kristens_law.html) — Marina Hunt
 - [Policing Drug Crimes in Providence](https://htried.github.io/opioid-journalism/html/week_in_policing.html) — Marina Hunt
-<!-- - [Rhode Island's Good Samaritan Law: Is It Saving Lives or Protecting Drug Dealers?](https://htried.github.io/opioid-journalism/html/good_samaritan.html) — Gaya Gupta -->
 
 ### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years
 - [Three Years of Fatal Overdoses in Providence](https://htried.github.io/opioid-journalism/html/providence_overdoses.html) — Olivia George, Marina Hunt and Colleen Cronin
@@ -30,7 +29,6 @@ We've broken up our project into multiple sections as follows:
 
 ### The Human Toll
 - [He Could Not Be Saved](https://htried.github.io/opioid-journalism/html/livingstone.html) — Max Kozlov
-<!-- - ["Recovery is Possible": One woman’s fight to save her own life and, now, the lives of others.](https://htried.github.io/opioid-journalism/html/roxxanne_newman.html) — Olivia George -->
 - [Not Just a White Problem: Minorities Are Dying of Opioid Overdoses. Rhode Island is Fighting to Stop It](https://htried.github.io/opioid-journalism/html/not_just_a_white_problem.html) — Gaya Gupta and Ivy Scott
 - [Stigma and Addiction](https://htried.github.io/opioid-journalism/html/opioid_stigma.html) — Lucas Fried and Nell Salzman
 - [Grandparents Raising Children of Those Lost to Addiction](https://htried.github.io/opioid-journalism/html/grandparents.html) — Olivia George
