@@ -67,7 +67,7 @@ Olivia George is a senior at Brown University studying history and plans to purs
 Ivy Scott is a 2021 Brown University graduate who studied international journalism and French. Her writing has appeared in The Providence Journal and The Boston Globe.<br><br>
 
 <img src="html/img/colleen_cronin.jpg" width="300"><br>
-Colleen Cronin is a 2021 graduate from Brown University who concentrated in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and is currently a freelance journalist working for the Daily Dot and the Boston Globe.
+Colleen Cronin is a 2021 graduate from Brown University who concentrated in English on the non-fiction track. Colleen was previously the Editor-in-Chief of The Brown Daily Herald and is currently a freelance journalist working for The Daily Dot and The Boston Globe.
 <br><br>
 
 <img src="html/img/greer_brigham.jpg" width="300"><br>
@@ -83,7 +83,7 @@ Maia Rosenfeld is a television data reporter in Philadelphia, PA, and was a Scri
 <br><br>
 
 <img src="html/img/gaya_gupta.jpg" width="300"><br>
-Gaya Gupta is a Junior at Brown concentrating in computer science and English. She writes for The College Hill Independent and hopes to pursue a career melding reporting and data science as a member of an investigative reporting team. 
+Gaya Gupta is a junior at Brown University concentrating in computer science and English. She writes for The College Hill Independent and hopes to pursue a career melding reporting and data science as a member of an investigative reporting team. 
 <br><br>
 
 <img src="html/img/lucas_fried.jpg" width="300"><br>
