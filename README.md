@@ -13,14 +13,14 @@ We've broken up our project into multiple sections as follows:
 - [Policing Drug Crimes in Providence](https://htried.github.io/opioid-journalism/html/week_in_policing.html) — Marina Hunt
 
 ### Who is Overdosing and Where — A Micro Look at Opioid Deaths in Providence Over the Past Three Years
-- [Three Years of Fatal Overdoses in Providence](https://htried.github.io/opioid-journalism/html/providence_overdoses.html) — Olivia George, Marina Hunt and Colleen Cronin
+- [Three Years of Fatal Overdoses in Providence](https://thepublicsradio.org/article/picture-of-an-epidemic-three-years-of-fatal-overdoses-in-providence) — Olivia George, Marina Hunt and Colleen Cronin
 
 ### Pharmacies and Addiction
 - [Nine years, 329 million pills](https://htried.github.io/opioid-journalism/html/pills_pharmacies.html) — Olivia George and Hal Triedman
 - [Injured Workers and Opioids](https://htried.github.io/opioid-journalism/html/injured_workers_opioids.html) — Maia Rosenfeld
 
 ### Rhodes Pharmaceuticals — Rhode Island's Opioid Manufacturing Base
-- [For Nearly a Decade, Two RI Opioid Manufacturers Made Billions of Opioid Doses](https://htried.github.io/opioid-journalism/html/rhodes.html) — Hal Triedman
+- [For Nearly a Decade, Two RI Opioid Manufacturers Made Billions of Opioid Doses](https://thepublicsradio.org/article/for-nearly-a-decade-two-ri-opioid-manufacturers-made-billions-of-opioid-doses) — Hal Triedman
 
 ### Doctors and the Opioid Epidemic
 - [Policing Doctors](https://htried.github.io/opioid-journalism/html/bad_docs.html) — Li Goldstein
