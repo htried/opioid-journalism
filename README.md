@@ -8,7 +8,7 @@ We've broken up our project into multiple sections as follows:
 ### How Rhode Island's Criminal Justice System Has Responded to the Opioid Epidemic
 - [An Inside Look at 30 years of Narcotics Prosecutions in Rhode Island](https://htried.github.io/opioid-journalism/html/court_data.html) — Lena Renshaw, Colleen Cronin, Gaya Gupta and Marina Hunt
 - [Adult Drug Court: Rhode Island’s Judiciary Takes a Public Health Approach to the Opioid Crisis](https://htried.github.io/opioid-journalism/html/adult_drug_court.html) — Ivy Scott
-- [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/html/ri_diversion.html) (sidebar to Adult Drug Court story) — Ivy Scott
+- [Rhode Island's New Diversion Program](https://htried.github.io/opioid-journalism/html/ri_diversion.html) — Ivy Scott
 - [Kristen's Law](https://htried.github.io/opioid-journalism/html/kristens_law.html) — Marina Hunt
 - [Policing Drug Crimes in Providence](https://htried.github.io/opioid-journalism/html/week_in_policing.html) — Marina Hunt
 <!-- - [Rhode Island's Good Samaritan Law: Is It Saving Lives or Protecting Drug Dealers?](https://htried.github.io/opioid-journalism/html/good_samaritan.html) — Gaya Gupta -->
